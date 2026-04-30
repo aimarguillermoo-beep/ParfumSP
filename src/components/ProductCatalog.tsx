@@ -48,14 +48,14 @@ export default function ProductCatalog() {
         </div>
 
         {/* Filters & Search */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 w-full">
           {/* Category Filters */}
-          <div className="flex items-center gap-1 bg-black-light rounded-sm p-1 border border-white/5">
+          <div className="flex items-center gap-1 bg-black-light rounded-sm p-1 border border-white/5 w-full sm:w-auto overflow-x-auto no-scrollbar">
             {filters.map(filter => (
               <button
                 key={filter.key}
                 onClick={() => setActiveFilter(filter.key)}
-                className={`px-5 py-2.5 text-xs uppercase tracking-wider font-medium rounded-sm transition-all duration-300 ${
+                className={`px-5 py-2.5 text-xs uppercase tracking-wider font-medium rounded-sm transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
                   activeFilter === filter.key
                     ? 'bg-gold-primary text-black-deep'
                     : 'text-cream/50 hover:text-cream'
@@ -68,7 +68,7 @@ export default function ProductCatalog() {
           </div>
 
           {/* Search */}
-          <div className="relative">
+          <div className="relative w-full sm:w-auto">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 absolute left-3 top-1/2 -translate-y-1/2 text-cream/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -77,7 +77,7 @@ export default function ProductCatalog() {
               placeholder="Buscar perfume o marca..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="bg-black-light border border-white/5 rounded-sm py-2.5 pl-10 pr-4 text-sm text-cream placeholder-cream/30 focus:border-gold-primary/30 focus:outline-none transition-colors w-64"
+              className="bg-black-light border border-white/5 rounded-sm py-2.5 pl-10 pr-4 text-sm text-cream placeholder-cream/30 focus:border-gold-primary/30 focus:outline-none transition-colors w-full sm:w-64"
               id="search-input"
             />
           </div>
