@@ -284,9 +284,9 @@ export const arabProducts: Product[] = [
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Incienso de olíbano", "Davana", "Bergamota"],
+      heart: ["Dátiles", "Tabaco", "Sándalo", "Nardos"],
+      base: ["Haba tonka", "Mirra", "Vainilla", "Ládano", "Pachulí"]
     },
   },
   {

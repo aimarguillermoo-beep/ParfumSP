@@ -7,10 +7,14 @@ import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import CartDrawer from './components/CartDrawer';
 import Footer from './components/Footer';
+import AdminLoginModal from './components/admin/AdminLoginModal';
+import AdminPanel from './components/admin/AdminPanel';
+import { useAdmin } from './context/AdminContext';
 
 export default function App() {
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '5411258250';
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+  const { isAdmin, setIsLoginModalOpen, setIsPanelOpen } = useAdmin();
 
   return (
     <div className="min-h-screen bg-black-deep">
@@ -56,6 +60,22 @@ export default function App() {
         {/* Pulse animation ring */}
         <span className="absolute inset-0 rounded-full border-2 border-pink-400 animate-ping opacity-30" />
       </a>
+
+      {/* Admin access button - fixed top-right corner */}
+      <button
+        onClick={() => isAdmin ? setIsPanelOpen(true) : setIsLoginModalOpen(true)}
+        className="fixed top-5 right-4 z-50 p-2 transition-all duration-300 opacity-20 hover:opacity-100"
+        id="admin-access-button"
+        aria-label="Acceso administrador"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gold-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+        </svg>
+      </button>
+
+      {/* Admin modals */}
+      <AdminLoginModal />
+      <AdminPanel />
     </div>
   );
 }

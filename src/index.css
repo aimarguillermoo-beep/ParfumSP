@@ -212,3 +212,28 @@
     padding: 8rem 4rem;
   }
 }
+
+/* ===== Admin Animations ===== */
+@keyframes adminShake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+@keyframes adminSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.admin-shake {
+  animation: adminShake 0.5s ease-in-out;
+}
+
+.admin-slide-in {
+  animation: adminSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

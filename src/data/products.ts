@@ -17,6 +17,8 @@ export interface Product {
   size: string;
   isBestSeller?: boolean;
   isNew?: boolean;
+  stock?: number;
+  isAvailable?: boolean;
 }
 
 export const products: Product[] = [

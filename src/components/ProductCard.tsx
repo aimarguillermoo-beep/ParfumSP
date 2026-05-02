@@ -59,24 +59,35 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
         <img
           src={product.image}
           alt={`${product.brand} ${product.name}`}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${product.isAvailable === false ? 'grayscale opacity-50' : ''}`}
           loading="lazy"
         />
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black-deep/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
+        {/* Sin Stock overlay */}
+        {product.isAvailable === false && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black-deep/40">
+            <span className="bg-red-500/90 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-sm">
+              Sin Stock
+            </span>
+          </div>
+        )}
+
         {/* Quick add button */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            addToCart(product);
-          }}
-          className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-gold-primary text-black-deep px-6 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 hover:bg-gold-light"
-          id={`add-to-cart-${product.id}`}
-          aria-label={`Agregar ${product.name} al carrito`}
-        >
-          Agregar al Carrito
-        </button>
+        {product.isAvailable !== false && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              addToCart(product);
+            }}
+            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-gold-primary text-black-deep px-6 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 hover:bg-gold-light"
+            id={`add-to-cart-${product.id}`}
+            aria-label={`Agregar ${product.name} al carrito`}
+          >
+            Agregar al Carrito
+          </button>
+        )}
       </div>
 
       {/* Info */}

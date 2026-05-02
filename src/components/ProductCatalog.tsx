@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { allProducts, brands as arabBrands } from '../data/products';
+import { brands as arabBrands } from '../data/products';
 import type { Product } from '../data/products';
+import { useProductOverrides } from '../hooks/useProductOverrides';
 import ProductCard from './ProductCard';
 import ProductModal from './ProductModal';
 
@@ -10,6 +11,7 @@ export default function ProductCatalog() {
   const [activeFilter, setActiveFilter] = useState<FilterCategory>('todos');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const { mergedProducts } = useProductOverrides();
 
   const filters: { key: FilterCategory; label: string }[] = [
     { key: 'todos', label: 'Todos' },
@@ -19,7 +21,7 @@ export default function ProductCatalog() {
     { key: 'arabe', label: 'Árabes' },
   ];
 
-  const filteredProducts = allProducts.filter(product => {
+  const filteredProducts = mergedProducts.filter(product => {
     // A product matches the category if:
     // 1. We are showing 'todos'
     // 2. The product's specific category matches the filter (hombre, mujer, unisex)
