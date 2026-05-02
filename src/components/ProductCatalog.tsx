@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { allProducts } from '../data/products';
+import { allProducts, brands as arabBrands } from '../data/products';
 import type { Product } from '../data/products';
 import ProductCard from './ProductCard';
 import ProductModal from './ProductModal';
@@ -20,7 +20,16 @@ export default function ProductCatalog() {
   ];
 
   const filteredProducts = allProducts.filter(product => {
-    const matchesCategory = activeFilter === 'todos' || product.category === activeFilter;
+    // A product matches the category if:
+    // 1. We are showing 'todos'
+    // 2. The product's specific category matches the filter (hombre, mujer, unisex)
+    // 3. The filter is 'arabe' and the brand is one of the known Arab brands
+    const isArabBrand = arabBrands.includes(product.brand);
+    const matchesCategory = 
+      activeFilter === 'todos' || 
+      product.category === activeFilter || 
+      (activeFilter === 'arabe' && isArabBrand);
+
     const matchesSearch =
       searchTerm === '' ||
       product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||

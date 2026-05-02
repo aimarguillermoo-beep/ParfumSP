@@ -156,7 +156,7 @@ export const products: Product[] = [
 export const allProducts: Product[] = [...products, ...arabProducts];
 
 export const brands = [
-  "Lattafa", "Armaff", "Al Haramain", "Al Wataniah",
+  "Lattafa", "Armaf", "Al Haramain", "Al Wataniah",
   "Maison Alhambra", "Asdaff", "Ard al Zaafaran", "French Avenue",
   "Afnan", "Rasasi", "Paris Corner", "Rayhaan",
   "Orientica"

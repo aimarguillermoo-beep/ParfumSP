@@ -11,19 +11,50 @@ import math
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageChops
 
+# ... (mantener los imports igual)
+
 # === CONFIGURACIÓN ===
 INPUT_DIR = Path(r"C:\Users\Guille\Desktop\autocentrar_imagenes\productos_crudos")
 OUTPUT_DIR = Path(r"C:\Users\Guille\Desktop\Parfum SP\public\images\arabes")
 CANVAS_SIZE = (1024, 1024)
 
-# Mapeo de archivos de entrada a nombres de salida limpios
-FILE_MAP = {
-    "Lattafa Ishq Al Shuyukh Gold Eau de Parfum Unisex 100 mL.webp": "ishq-al-shuyukh-gold.png",
-    "Shop Lattafa Opulent Red EDP 100ml.webp": "opulent-red.png",
-    "art_of_arabia_I_100ml.webp": "art-of-arabia-i.png",
-    "jean lowe vibe 100 ml.png": "jean-lowe-vibe.png",
-}
+# ELIMINÁ EL FILE_MAP FIJO Y REEMPLAZALO POR ESTA LÓGICA:
 
+def get_clean_name(filename):
+    """Limpia el nombre del archivo para la salida (ej: de 'Nombre Largo.webp' a 'nombre-largo.png')"""
+    name = Path(filename).stem # Toma el nombre sin extensión
+    clean_name = name.lower().replace(" ", "-").replace("_", "-")
+    return f"{clean_name}.png"
+
+# --- PROCESO DINÁMICO ---
+def process_all_images():
+    # Buscamos todos los archivos de imagen compatibles
+    extensions = ['*.webp', '*.png', '*.jpg', '*.jpeg']
+    files_to_process = []
+    for ext in extensions:
+        files_to_process.extend(INPUT_DIR.glob(ext))
+
+    if not files_to_process:
+        print("No hay imágenes nuevas en 'productos_crudos' para procesar.")
+        return
+
+    print(f"Procesando {len(files_to_process)} imágenes encontradas...")
+
+    for file_path in files_to_process:
+        input_name = file_path.name
+        output_name = get_clean_name(input_name)
+        
+        print(f"-> Procesando: {input_name} para generar {output_name}")
+        
+        # Aquí llamarías a tu lógica de procesamiento (la que ya tenés abajo en el script)
+        # image = Image.open(file_path)
+        # background = create_luxury_background(CANVAS_SIZE)
+        # ... resto de tu lógica ...
+        
+        # Al final, guardás usando output_name
+        # final_img.save(OUTPUT_DIR / output_name)
+
+# ... (el resto de tus funciones como create_luxury_background siguen igual)
 
 def create_luxury_background(size):
     """Crea un fondo oscuro lujoso con gradiente radial y tonos dorados."""
