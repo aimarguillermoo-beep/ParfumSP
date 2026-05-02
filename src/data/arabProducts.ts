@@ -229,19 +229,19 @@ export const arabProducts: Product[] = [
       base: ["Vetiver"]
     },
   },
-        {
+  {
     id: 115,
-    name: "9 Pm Elixir",
-    brand: "Lattafa",
+    name: "9 PM Elixir",
+    brand: "Afnan",
     price: 35000,
     image: "/images/mockups/9_pm_elixir_100ml.webp",
     category: "hombre",
-    description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
+    description: "Versión más concentrada del 9PM. Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Vainilla", "Ámbar"],
+      heart: ["Especias picantes"],
+      base: ["Madera"]
     },
   },
   {
@@ -250,13 +250,13 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 35000,
     image: "/images/mockups/al_nashama_caprice_100ml.webp",
-    category: "hombre",
+    category: "unisex",
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Bergamota", "Jengibre"],
+      heart: ["Cardamomo", "Lavanda"],
+      base: ["Cedro"]
     },
   },
   {
@@ -269,9 +269,9 @@ export const arabProducts: Product[] = [
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Mandarina", "Notas marinas"],
+      heart: ["Ámbar", "Almizcle"],
+      base: ["Maderas blancas"]
     },
   },
   {
@@ -291,7 +291,7 @@ export const arabProducts: Product[] = [
   },
   {
     id: 119,
-    name: "Art Of Nature Ii",
+    name: "Art Of Nature II",
     brand: "Lattafa",
     price: 35000,
     image: "/images/mockups/Art_Of_Nature_II_100ml.webp",
@@ -299,9 +299,9 @@ export const arabProducts: Product[] = [
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Notas verdes", "Cítricos"],
+      heart: ["Maderas exóticas"],
+      base: ["Fondo terroso"]
     },
   },
   {
@@ -310,13 +310,13 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 35000,
     image: "/images/mockups/essence_de_blanc_100ml.webp",
-    category: "unisex",
+    category: "mujer",
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Flores blancas", "Bergamota"],
+      heart: ["Notas empolvadas"],
+      base: ["Almizcle"]
     },
   },
   {
@@ -329,9 +329,9 @@ export const arabProducts: Product[] = [
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Manzana verde", "Bergamota"],
+      heart: ["Cardamomo", "Canela"],
+      base: ["Notas amaderadas"]
     },
   },
   {
@@ -344,9 +344,9 @@ export const arabProducts: Product[] = [
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Pomelo", "Enebro"],
+      heart: ["Pimienta rosa", "Jazmín"],
+      base: ["Cedro"]
     },
   },
   {
@@ -359,9 +359,9 @@ export const arabProducts: Product[] = [
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Canela", "Nuez moscada"],
+      heart: ["Dátiles", "Praliné"],
+      base: ["Vainilla"]
     },
   },
   {
@@ -374,9 +374,9 @@ export const arabProducts: Product[] = [
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Canela", "Nuez moscada"],
+      heart: ["Dátiles", "Praliné", "Café tostado"],
+      base: ["Vainilla"]
     },
   },
   {
@@ -385,28 +385,28 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 35000,
     image: "/images/mockups/king_of_arabia_100ml.webp",
-    category: "unisex",
+    category: "hombre",
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Cítricos intensos", "Notas marinas"],
+      heart: ["Especias orientales"],
+      base: ["Cuero"]
     },
   },
   {
     id: 126,
     name: "La Yuqawam",
-    brand: "Lattafa",
+    brand: "Rasasi",
     price: 35000,
     image: "/images/mockups/la_yuqawam-100ml.webp",
     category: "hombre",
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Frambuesa", "Azafrán"],
+      heart: ["Tomillo"],
+      base: ["Gamuza", "Cuero"]
     },
   },
   {
@@ -415,28 +415,28 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 35000,
     image: "/images/mockups/nebras_elixir_100ml.webp",
-    category: "mujer",
+    category: "unisex",
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Frutos rojos", "Mandarina"],
+      heart: ["Cacao", "Azúcar"],
+      base: ["Vainilla", "Haba Tonka"]
     },
   },
   {
     id: 128,
     name: "Philos Pura",
-    brand: "Lattafa",
+    brand: "Maison Alhambra",
     price: 35000,
     image: "/images/mockups/philos_pura_100ml.webp",
     category: "unisex",
     description: "Una de nuestras adiciones más exclusivas a la colección premium de perfumería árabe.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Azafrán"],
-      heart: ["Rosa de Damasco", "Oud"],
-      base: ["Sándalo", "Ámbar gris"]
+      top: ["Cítricos sicilianos"],
+      heart: ["Mezcla de frutas"],
+      base: ["Vainilla", "Almizcle blanco"]
     },
   },
   {
