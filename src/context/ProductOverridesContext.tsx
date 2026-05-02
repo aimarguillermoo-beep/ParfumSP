@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { createContext, useContext, useState, useCallback, useMemo, type ReactNode } from 'react';
 import type { Product } from '../data/products';
 import { allProducts } from '../data/products';
 
@@ -11,6 +11,20 @@ export interface ProductOverride {
 }
 
 type OverridesMap = Record<number, ProductOverride>;
+
+interface ProductOverridesContextType {
+  overrides: OverridesMap;
+  mergedProducts: Product[];
+  updatePrice: (id: number, price: number) => void;
+  setOffer: (id: number, price: number) => void;
+  removeOffer: (id: number) => void;
+  updateStock: (id: number, stock: number) => void;
+  toggleAvailability: (id: number) => void;
+  resetAll: () => void;
+  resetProduct: (id: number) => void;
+}
+
+const ProductOverridesContext = createContext<ProductOverridesContextType | undefined>(undefined);
 
 const OVERRIDES_KEY = 'parfumsp_product_overrides';
 
@@ -27,7 +41,7 @@ function saveOverrides(overrides: OverridesMap) {
   localStorage.setItem(OVERRIDES_KEY, JSON.stringify(overrides));
 }
 
-export function useProductOverrides() {
+export function ProductOverridesProvider({ children }: { children: ReactNode }) {
   const [overrides, setOverrides] = useState<OverridesMap>(loadOverrides);
 
   const updatePrice = useCallback((productId: number, newPrice: number) => {
@@ -42,13 +56,12 @@ export function useProductOverrides() {
   }, []);
 
   const setOffer = useCallback((productId: number, discountedPrice: number) => {
-    // Find the base product to get the original price
-    const baseProduct = allProducts.find(p => p.id === productId);
-    if (!baseProduct) return;
-
-    const currentPrice = overrides[productId]?.price ?? baseProduct.price;
-
     setOverrides(prev => {
+      const baseProduct = allProducts.find(p => p.id === productId);
+      if (!baseProduct) return prev;
+
+      const currentPrice = prev[productId]?.price ?? baseProduct.price;
+
       const updated = {
         ...prev,
         [productId]: {
@@ -61,7 +74,7 @@ export function useProductOverrides() {
       saveOverrides(updated);
       return updated;
     });
-  }, [overrides]);
+  }, []);
 
   const removeOffer = useCallback((productId: number) => {
     setOverrides(prev => {
@@ -137,15 +150,29 @@ export function useProductOverrides() {
     });
   }, [overrides]);
 
-  return {
-    overrides,
-    mergedProducts,
-    updatePrice,
-    setOffer,
-    removeOffer,
-    updateStock,
-    toggleAvailability,
-    resetAll,
-    resetProduct,
-  };
+  return (
+    <ProductOverridesContext.Provider
+      value={{
+        overrides,
+        mergedProducts,
+        updatePrice,
+        setOffer,
+        removeOffer,
+        updateStock,
+        toggleAvailability,
+        resetAll,
+        resetProduct,
+      }}
+    >
+      {children}
+    </ProductOverridesContext.Provider>
+  );
+}
+
+export function useProductOverrides() {
+  const context = useContext(ProductOverridesContext);
+  if (!context) {
+    throw new Error('useProductOverrides must be used within a ProductOverridesProvider');
+  }
+  return context;
 }

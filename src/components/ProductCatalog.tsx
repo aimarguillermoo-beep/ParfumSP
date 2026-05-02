@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { brands as arabBrands } from '../data/products';
 import type { Product } from '../data/products';
-import { useProductOverrides } from '../hooks/useProductOverrides';
+import { useProductOverrides } from '../context/ProductOverridesContext';
 import ProductCard from './ProductCard';
 import ProductModal from './ProductModal';
 

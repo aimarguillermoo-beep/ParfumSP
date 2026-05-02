@@ -4,13 +4,16 @@ import './index.css'
 import App from './App'
 import { CartProvider } from './context/CartContext'
 import { AdminProvider } from './context/AdminContext'
+import { ProductOverridesProvider } from './context/ProductOverridesContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <AdminProvider>
-      <CartProvider>
-        <App />
-      </CartProvider>
+      <ProductOverridesProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </ProductOverridesProvider>
     </AdminProvider>
   </StrictMode>,
 )

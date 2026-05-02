@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { allProducts } from '../data/products';
 import type { Product } from '../data/products';
+import { useProductOverrides } from '../context/ProductOverridesContext';
 import { useCart } from '../context/CartContext';
 import ProductModal from './ProductModal';
 
 export default function BestSellers() {
-  const bestSellers = allProducts.filter(p => p.isBestSeller);
+  const { mergedProducts } = useProductOverrides();
+  const bestSellers = mergedProducts.filter(p => p.isBestSeller);
   const { addToCart } = useCart();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 

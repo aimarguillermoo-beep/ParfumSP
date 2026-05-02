@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAdmin } from '../../context/AdminContext';
-import { useProductOverrides } from '../../hooks/useProductOverrides';
+import { useProductOverrides } from '../../context/ProductOverridesContext';
 import AdminProductRow from './AdminProductRow';
 
 export default function AdminPanel() {

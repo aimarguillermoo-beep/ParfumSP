@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Product } from '../../data/products';
-import type { ProductOverride } from '../../hooks/useProductOverrides';
+import type { ProductOverride } from '../../context/ProductOverridesContext';
 
 interface AdminProductRowProps {
   product: Product;
