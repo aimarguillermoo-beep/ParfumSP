@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
-import { useAdmin } from '../context/AdminContext';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { totalItems, setIsCartOpen } = useCart();
-  const { isAdmin, setIsLoginModalOpen, setIsPanelOpen } = useAdmin();
 
   useEffect(() => {
     const handleScroll = () => {
