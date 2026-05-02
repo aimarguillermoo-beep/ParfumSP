@@ -15,6 +15,7 @@ export default function AdminPanel() {
     toggleAvailability,
     resetAll,
     resetProduct,
+    isLoading,
   } = useProductOverrides();
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -92,24 +93,33 @@ export default function AdminPanel() {
 
         {/* Product list */}
         <div className="flex-1 overflow-y-auto">
-          {filteredProducts.map((product) => (
-            <AdminProductRow
-              key={product.id}
-              product={product}
-              override={overrides[product.id]}
-              onUpdatePrice={updatePrice}
-              onSetOffer={setOffer}
-              onRemoveOffer={removeOffer}
-              onUpdateStock={updateStock}
-              onToggleAvailability={toggleAvailability}
-              onResetProduct={resetProduct}
-            />
-          ))}
-
-          {filteredProducts.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-cream/30 text-sm">No se encontraron productos</p>
+          {isLoading ? (
+            <div className="flex flex-col items-center justify-center py-20 gap-4">
+              <div className="w-8 h-8 border-2 border-gold-primary/20 border-t-gold-primary rounded-full animate-spin" />
+              <p className="text-cream/30 text-xs uppercase tracking-widest">Cargando datos...</p>
             </div>
+          ) : (
+            <>
+              {filteredProducts.map((product) => (
+                <AdminProductRow
+                  key={product.id}
+                  product={product}
+                  override={overrides[product.id]}
+                  onUpdatePrice={updatePrice}
+                  onSetOffer={setOffer}
+                  onRemoveOffer={removeOffer}
+                  onUpdateStock={updateStock}
+                  onToggleAvailability={toggleAvailability}
+                  onResetProduct={resetProduct}
+                />
+              ))}
+
+              {filteredProducts.length === 0 && (
+                <div className="text-center py-12">
+                  <p className="text-cream/30 text-sm">No se encontraron productos</p>
+                </div>
+              )}
+            </>
           )}
         </div>
 
