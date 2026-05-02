@@ -52,7 +52,7 @@ export default function Navbar() {
           {/* Mobile admin key - only visible on small screens */}
           <button
             onClick={() => isAdmin ? setIsPanelOpen(true) : setIsLoginModalOpen(true)}
-            className="sm:hidden p-1.5 opacity-20 hover:opacity-100 transition-all duration-300"
+            className="sm:hidden p-1.5 ml-2 opacity-20 hover:opacity-100 transition-all duration-300"
             aria-label="Acceso administrador"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gold-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
