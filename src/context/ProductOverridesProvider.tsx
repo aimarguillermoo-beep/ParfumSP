@@ -176,7 +176,6 @@ export function ProductOverridesProvider({ children }: { children: ReactNode }) 
     try {
       const { error } = await supabase
         .from(TABLE_NAME)
-        .from(TABLE_NAME)
         .delete()
         .neq('id', 0); // Delete all
       
