@@ -1,5 +1,7 @@
 import { useCart } from '../context/CartContext';
 import { useEffect } from 'react';
+import { businessInfo } from '../data/businessConfig';
+import { formatPrice, getWhatsAppUrl } from '../utils/formatters';
 
 export default function CartDrawer() {
   const {
@@ -24,25 +26,14 @@ export default function CartDrawer() {
     };
   }, [isCartOpen]);
 
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-AR', {
-      style: 'currency',
-      currency: 'ARS',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
-
   const handleWhatsAppOrder = () => {
-    const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '5411258250';
     const itemsList = items
       .map(item => `• ${item.product.brand} ${item.product.name} (x${item.quantity}) - ${formatPrice(item.product.price * item.quantity)}`)
       .join('\n');
 
-    const message = encodeURIComponent(
-      `¡Hola! Me gustaría hacer un pedido:\n\n${itemsList}\n\n*Total: ${formatPrice(totalPrice)}*\n\n¿Está disponible?`
-    );
+    const message = `${businessInfo.contact.whatsapp.orderMessagePrefix}\n\n${itemsList}\n\n*Total: ${formatPrice(totalPrice)}*\n\n¿Está disponible?`;
 
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    window.open(getWhatsAppUrl(message), '_blank');
   };
 
   if (!isCartOpen) return null;

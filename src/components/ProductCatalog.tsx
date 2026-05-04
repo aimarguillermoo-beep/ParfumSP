@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { brands as arabBrands } from '../data/products';
+import { ARAB_BRANDS } from '../data/products';
 import type { Product } from '../data/products';
 import { useProductOverrides } from '../context/ProductOverridesContext';
 import ProductCard from './ProductCard';
@@ -26,7 +26,7 @@ export default function ProductCatalog() {
     // 1. We are showing 'todos'
     // 2. The product's specific category matches the filter (hombre, mujer, unisex)
     // 3. The filter is 'arabe' and the brand is one of the known Arab brands
-    const isArabBrand = arabBrands.includes(product.brand);
+    const isArabBrand = ARAB_BRANDS.includes(product.brand);
     const matchesCategory = 
       activeFilter === 'todos' || 
       product.category === activeFilter || 

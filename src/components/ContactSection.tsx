@@ -1,6 +1,8 @@
+import { businessInfo } from '../data/businessConfig';
+import { getWhatsAppUrl } from '../utils/formatters';
+
 export default function ContactSection() {
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '5411258250';
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('¡Hola! Me gustaría consultar sobre sus perfumes.')}`;
+  const whatsappUrl = getWhatsAppUrl(businessInfo.contact.whatsapp.defaultMessage);
 
   return (
     <section id="contacto" className="section-padding bg-black-base relative overflow-hidden">
@@ -60,8 +62,8 @@ export default function ContactSection() {
             <h3 className="font-heading text-lg font-semibold text-white-soft mb-2 group-hover:text-gold-primary transition-colors">
               Ubicación
             </h3>
-            <p className="text-cream/50 text-sm">Calle 4 entre 3 y 5 del Centro</p>
-            <p className="text-cream/50 text-sm">Las Heras 166</p>
+            <p className="text-cream/50 text-sm">{businessInfo.location.address}</p>
+            <p className="text-cream/50 text-sm">{businessInfo.location.city} {businessInfo.location.zipCode}</p>
           </div>
 
           {/* Hours Card */}
@@ -75,9 +77,9 @@ export default function ContactSection() {
               Horarios
             </h3>
             <div className="text-cream/50 text-sm space-y-1">
-              <p>Lunes a Viernes: <span className="text-cream/70">9:00 - 20:00</span></p>
-              <p>Sábados: <span className="text-cream/70">9:00 - 14:00</span></p>
-              <p>Domingos: <span className="text-cream/70">Cerrado</span></p>
+              <p>Lunes a Viernes: <span className="text-cream/70">{businessInfo.hours.weekdays.split(': ')[1]}</span></p>
+              <p>Sábados: <span className="text-cream/70">{businessInfo.hours.saturdays.split(': ')[1]}</span></p>
+              <p>Domingos: <span className="text-cream/70">{businessInfo.hours.sundays}</span></p>
             </div>
           </div>
         </div>

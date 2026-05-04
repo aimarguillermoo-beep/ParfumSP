@@ -1,3 +1,4 @@
+import { businessInfo } from '../data/businessConfig';
 import { useState, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
 import { useAdmin } from '../context/AdminContext';
@@ -37,8 +38,8 @@ export default function Navbar() {
         <div className="flex-1 flex justify-start">
           <a href="#inicio" className="flex items-center gap-3 group">
             <img
-              src="/logo.png"
-              alt="ParfumSP Logo"
+              src={businessInfo.logo}
+              alt={`${businessInfo.name} Logo`}
               className={`transition-all duration-500 rounded-full ${
                 isScrolled ? 'h-10 w-10' : 'h-14 w-14'
               }`}
@@ -46,7 +47,7 @@ export default function Navbar() {
             <span className={`font-heading font-bold gold-gradient-text tracking-wider transition-all duration-500 ${
               isScrolled ? 'text-lg' : 'text-xl'
             }`}>
-              PARFUMSP
+              {businessInfo.name}
             </span>
           </a>
         </div>

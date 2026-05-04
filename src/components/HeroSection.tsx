@@ -1,3 +1,4 @@
+import { businessInfo } from '../data/businessConfig';
 import GoldParticles from './GoldParticles';
 
 export default function HeroSection() {
@@ -17,8 +18,8 @@ export default function HeroSection() {
         {/* Logo */}
         <div className="mb-8 animate-fadeInUp">
           <img
-            src="/logo.png"
-            alt="ParfumSP"
+            src={businessInfo.logo}
+            alt={businessInfo.name}
             className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full gold-glow animate-float object-cover mx-auto"
           />
         </div>
@@ -35,7 +36,7 @@ export default function HeroSection() {
           className="font-elegant text-gold-light text-lg sm:text-xl md:text-2xl tracking-[0.3em] uppercase mb-4 animate-fadeInUp"
           style={{ animationDelay: '0.3s' }}
         >
-          Perfumería Premium
+          {businessInfo.tagline}
         </p>
 
         {/* Main Heading */}
@@ -43,11 +44,11 @@ export default function HeroSection() {
           className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fadeInUp leading-tight"
           style={{ animationDelay: '0.4s' }}
         >
-          <span className="gold-gradient-text">Fragancias</span>
+          <span className="gold-gradient-text">{businessInfo.hero.title.line1}</span>
           <br />
-          <span className="text-white-soft">que Definen</span>
+          <span className="text-white-soft">{businessInfo.hero.title.line2}</span>
           <br />
-          <span className="gold-gradient-text italic">tu Estilo</span>
+          <span className="gold-gradient-text italic">{businessInfo.hero.title.line3}</span>
         </h1>
 
         {/* Subtitle */}
@@ -55,8 +56,7 @@ export default function HeroSection() {
           className="text-cream/60 text-base sm:text-lg max-w-xl mx-auto mb-10 font-light animate-fadeInUp"
           style={{ animationDelay: '0.5s' }}
         >
-          Descubrí nuestra colección exclusiva de las mejores marcas internacionales.
-          Elegancia, sofisticación y personalidad en cada gota.
+          {businessInfo.hero.subtitle}
         </p>
 
         {/* CTA Buttons */}

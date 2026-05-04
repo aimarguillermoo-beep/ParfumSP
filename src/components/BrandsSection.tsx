@@ -1,7 +1,7 @@
-import { brands } from '../data/products';
+import { ARAB_BRANDS } from '../data/products';
 
 export default function BrandsSection() {
-  const allBrands = [...brands, ...brands];
+  const allBrands = [...ARAB_BRANDS, ...ARAB_BRANDS];
 
   return (
     <section className="py-16 bg-black-base border-y border-gold-primary/10 overflow-hidden">

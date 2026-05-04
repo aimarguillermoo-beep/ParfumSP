@@ -1,5 +1,6 @@
 import type { Product } from '../data/products';
 import { useCart } from '../context/CartContext';
+import { formatPrice } from '../utils/formatters';
 
 interface ProductCardProps {
   product: Product;
@@ -9,14 +10,6 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, onSelect, index = 0 }: ProductCardProps) {
   const { addToCart } = useCart();
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-AR', {
-      style: 'currency',
-      currency: 'ARS',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
 
   const discount = product.originalPrice
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)

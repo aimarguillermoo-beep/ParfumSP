@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import type { Product } from '../data/products';
 import { useCart } from '../context/CartContext';
+import { businessInfo } from '../data/businessConfig';
+import { formatPrice, getWhatsAppUrl } from '../utils/formatters';
 
 interface ProductModalProps {
   product: Product | null;
@@ -31,19 +33,8 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
   if (!product) return null;
 
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-AR', {
-      style: 'currency',
-      currency: 'ARS',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
-
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '5411258250';
-  const whatsappMessage = encodeURIComponent(
-    `¡Hola! Me interesa el perfume *${product.brand} ${product.name}* (${product.size}) - ${formatPrice(product.price)}. ¿Está disponible?`
-  );
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappMessage = `${businessInfo.contact.whatsapp.productInquiryPrefix}*${product.brand} ${product.name}* (${product.size}) - ${formatPrice(product.price)}. ¿Está disponible?`;
+  const whatsappUrl = getWhatsAppUrl(whatsappMessage);
 
   const handleAddToCart = () => {
     addToCart(product);

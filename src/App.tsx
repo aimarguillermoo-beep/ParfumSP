@@ -1,3 +1,5 @@
+import { businessInfo } from './data/businessConfig';
+import { getWhatsAppUrl } from './utils/formatters';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import BrandsSection from './components/BrandsSection';
@@ -12,8 +14,7 @@ import AdminPanel from './components/admin/AdminPanel';
 import { useAdmin } from './context/AdminContext';
 
 export default function App() {
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '5411258250';
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+  const whatsappUrl = getWhatsAppUrl(businessInfo.contact.whatsapp.defaultMessage);
   const { isAdmin, setIsLoginModalOpen, setIsPanelOpen } = useAdmin();
 
   return (
@@ -47,7 +48,7 @@ export default function App() {
       </a>
       {/* Floating Instagram Button */}
       <a
-        href="https://www.instagram.com/parfumsp025?igsh=MWs0c3M4bDRsZ3QxZg=="
+        href={businessInfo.contact.instagram.url}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 left-6 z-50 w-14 h-14 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(236,72,153,0.4)] hover:scale-110 transition-all duration-300 group"

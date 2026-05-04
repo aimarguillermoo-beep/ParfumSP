@@ -1,3 +1,5 @@
+import { businessInfo } from '../data/businessConfig';
+
 export default function AboutSection() {
   return (
     <section id="nosotros" className="section-padding bg-black-deep relative overflow-hidden">
@@ -27,8 +29,8 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative rounded-sm overflow-hidden gold-border group">
               <img
-                src="/logo.png"
-                alt="ParfumSP Perfumería"
+                src={businessInfo.logo}
+                alt={`${businessInfo.name} Perfumería`}
                 className="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black-deep/60 to-transparent" />
@@ -46,7 +48,7 @@ export default function AboutSection() {
 
             <div className="space-y-4 text-cream/60 text-sm leading-relaxed">
               <p>
-                En <span className="text-gold-primary font-semibold">ParfumSP</span> creemos que un perfume
+                En <span className="text-gold-primary font-semibold">{businessInfo.name}</span> creemos que un perfume
                 es mucho más que un aroma — es una extensión de tu personalidad, un sello invisible que deja
                 huella en cada lugar y en cada persona que te rodea.
               </p>
@@ -64,15 +66,15 @@ export default function AboutSection() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mt-8">
               <div className="text-center p-4 bg-black-light/50 rounded-sm border border-white/5">
-                <p className="text-gold-primary font-heading text-3xl font-bold">500+</p>
+                <p className="text-gold-primary font-heading text-3xl font-bold">{businessInfo.stats.fragrances}</p>
                 <p className="text-cream/40 text-xs uppercase tracking-wider mt-1">Fragancias</p>
               </div>
               <div className="text-center p-4 bg-black-light/50 rounded-sm border border-white/5">
-                <p className="text-gold-primary font-heading text-3xl font-bold">50+</p>
+                <p className="text-gold-primary font-heading text-3xl font-bold">{businessInfo.stats.brands}</p>
                 <p className="text-cream/40 text-xs uppercase tracking-wider mt-1">Marcas</p>
               </div>
               <div className="text-center p-4 bg-black-light/50 rounded-sm border border-white/5">
-                <p className="text-gold-primary font-heading text-3xl font-bold">100%</p>
+                <p className="text-gold-primary font-heading text-3xl font-bold">{businessInfo.stats.originality}</p>
                 <p className="text-cream/40 text-xs uppercase tracking-wider mt-1">Originales</p>
               </div>
             </div>
@@ -86,8 +88,8 @@ export default function AboutSection() {
                 </svg>
                 <div>
                   <p className="text-gold-primary font-semibold text-sm mb-1">Visitanos en nuestra tienda</p>
-                  <p className="text-cream/50 text-sm">Calle 4 entre 3 y 5 del Centro</p>
-                  <p className="text-cream/50 text-sm">Las Heras 166</p>
+                  <p className="text-cream/50 text-sm">{businessInfo.location.address}</p>
+                  <p className="text-cream/50 text-sm">{businessInfo.location.city} {businessInfo.location.zipCode}</p>
                 </div>
               </div>
             </div>
