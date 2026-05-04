@@ -84,24 +84,17 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
       </div>
 
       {/* Info */}
-      <div className="p-3 sm:p-4 min-h-[140px] sm:min-h-[150px] flex flex-col justify-between">
-        <div className="flex-grow">
-          {/* Brand with fixed height to align names */}
-          <p className="text-gold-primary/60 text-[9px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] font-medium mb-1 line-clamp-2 min-h-[1.5rem] sm:min-h-[2rem]">
-            {product.brand}
-          </p>
-          
-          {/* Name with line-clamp-2 to show more but limit height */}
-          <h3 className="text-white-soft font-heading text-sm sm:text-lg font-semibold mb-1 group-hover:text-gold-primary transition-colors duration-300 line-clamp-2 min-h-[2.5rem] sm:min-h-[3.5rem] leading-tight">
-            {product.name}
-          </h3>
-          
-          <p className="text-cream/40 text-[10px] sm:text-xs mb-2">
-            {product.size} · {product.category === 'hombre' ? '♂ Hombre' : product.category === 'mujer' ? '♀ Mujer' : product.category === 'arabe' ? '☪ Árabe' : '⚥ Unisex'}
-          </p>
-        </div>
-        
-        <div className="flex flex-wrap items-center gap-1 sm:gap-2 mt-auto">
+      <div className="p-3 sm:p-4 flex flex-col">
+        <p className="text-gold-primary/60 text-[9px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] font-medium mb-0.5 line-clamp-1">
+          {product.brand}
+        </p>
+        <h3 className="text-white-soft font-heading text-sm sm:text-lg font-semibold mb-0.5 group-hover:text-gold-primary transition-colors duration-300 line-clamp-2 leading-tight">
+          {product.name}
+        </h3>
+        <p className="text-cream/40 text-[10px] sm:text-xs mb-1.5">
+          {product.size} · {product.category === 'hombre' ? '♂ Hombre' : product.category === 'mujer' ? '♀ Mujer' : product.category === 'arabe' ? '☪ Árabe' : '⚥ Unisex'}
+        </p>
+        <div className="flex flex-wrap items-center gap-1 sm:gap-2">
           <span className="text-gold-primary font-semibold text-sm sm:text-lg">
             {formatPrice(product.price)}
           </span>
