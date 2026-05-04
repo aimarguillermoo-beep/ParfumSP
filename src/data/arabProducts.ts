@@ -199,21 +199,7 @@ export const arabProducts: Product[] = [
       base: ["Vainilla", "Almizcle"]
     },
   },
-  {
-    id: 113,
-    name: "Al Nashama",
-    brand: "Lattafa",
-    price: 31000,
-    image: "/images/arabes/al-nashama.webp",
-    category: "unisex",
-    description: "Un frasco azul zafiro con detalles dorados que captura la elegancia nocturna del medio oriente. Fragancia profunda y envolvente.",
-    size: "100ml",
-    notes: {
-      top: ["Pimienta rosa", "Bergamota", "Salvia"],
-      heart: ["Ciruela", "Pimienta negra", "Jazmín"],
-      base: ["Ámbar", "Pachulí", "Musgo"]
-    },
-  },
+
   {
     id: 114,
     name: "Scandal Pour Homme",
@@ -812,6 +798,21 @@ export const arabProducts: Product[] = [
       top: ["Azafrán", "Bergamota", "Elemi"],
       heart: ["Oud (Agarwood)", "Rosa Búlgara", "Lirio de los valles"],
       base: ["Haba Tonka", "Ámbar", "Almizcle blanco", "Musgo de roble"]
+    },
+  },
+  {
+    id: 155,
+    name: "9PM Night Out",
+    brand: "Afnan",
+    price: 95000,
+    image: "/images/mockups/9pm_nigth_out.webp",
+    category: "hombre",
+    description: "La fragancia definitiva para tus noches de fiesta. Una mezcla magnética y vibrante que asegura una presencia inolvidable en cada salida.",
+    size: "100ml",
+    notes: {
+      top: ["Manzana", "Lavanda", "Bergamota"],
+      heart: ["Azahar", "Canela"],
+      base: ["Vainilla", "Haba Tonka", "Ámbar"]
     },
   },
 ];
