@@ -59,7 +59,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Pomelo", "Jengibre"],
       heart: ["Ambroxan", "Ládano"],
-      base: ["Pachulí", "Notas amaderadas"]
+      base: ["Pachulíí", "Notas amaderadas"]
     },
   },
   {
@@ -74,7 +74,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Limón", "Pomelo", "Bergamota", "Menta", "Pimienta rosa"],
       heart: ["Melón", "Jazmín", "Jengibre", "Nuez moscada"],
-      base: ["Pachulí", "Sándalo", "Ámbar", "Incienso", "Cedro"]
+      base: ["Pachulíí", "Sándalo", "Ámbar", "Incienso", "Cedro"]
     },
   },
   {
@@ -120,7 +120,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Canela", "Lavanda", "Mandarina"],
       heart: ["Iris", "Benjuí", "Ciprés", "Mahonial"],
-      base: ["Vainilla", "Haba Tonka", "Ámbar", "Cedro", "Incienso", "Pachulí"]
+      base: ["Vainilla", "Haba Tonka", "Ámbar", "Cedro", "Incienso", "Pachulíí"]
     },
   },
   {
@@ -135,7 +135,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Manzana", "Canela", "Lavanda", "Bergamota"],
       heart: ["Azahar", "Lirio de los valles"],
-      base: ["Vainilla", "Haba Tonka", "Ámbar", "Pachulí"]
+      base: ["Vainilla", "Haba Tonka", "Ámbar", "Pachulíí"]
     },
     isBestSeller: true,
   },
@@ -151,7 +151,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Manzana", "Bergamota", "Limón", "Canela"],
       heart: ["Notas marinas", "Ciruela", "Azahar", "Cardamomo"],
-      base: ["Ámbar gris", "Almizcle", "Pachulí", "Madera a la deriva"]
+      base: ["Ámbar gris", "Almizcle", "Pachulíí", "Madera a la deriva"]
     },
   },
   {
@@ -176,7 +176,7 @@ export const arabProducts: Product[] = [
     price: 50000,
     image: "/images/arabes/leonie-intense.webp",
     category: "mujer",
-    description: "Fragancia intensa ambarada con carácter art déco. Su líquido ámbar profundo y diseño geométrico reflejan elegancia atemporal.",
+    description: "Fragancia intensa aÁmbarada con carácter art déco. Su líquido áÁmbar profundo y diseño geométrico reflejan elegancia atemporal.",
     size: "100ml",
     notes: {
       top: ["Mandarina", "Bergamota", "Lavanda"],
@@ -272,7 +272,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Incienso de olíbano", "Davana", "Bergamota"],
       heart: ["Dátiles", "Tabaco", "Sándalo", "Nardos"],
-      base: ["Haba tonka", "Mirra", "Vainilla", "Ládano", "Pachulí"]
+      base: ["Haba tonka", "Mirra", "Vainilla", "Ládano", "Pachulíí"]
     },
   },
   {
@@ -527,7 +527,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Azafrán", "Mandarina", "Bergamota"],
       heart: ["Geranio", "Incienso", "Ámbar"],
-      base: ["Cuero", "Pachulí", "Almizcle"]
+      base: ["Cuero", "Pachulíí", "Almizcle"]
     },
   },
   {
@@ -537,7 +537,7 @@ export const arabProducts: Product[] = [
     price: 31000,
     image: "/images/mockups/odyssey_mandarinsky_elixir.webp",
     category: "hombre",
-    description: "Un elixir cítrico vibrante con un corazón ambarado. Frescura y calidez en perfecto equilibrio.",
+    description: "Un elixir cítrico vibrante con un corazón aÁmbarado. Frescura y calidez en perfecto equilibrio.",
     size: "100ml",
     notes: {
       top: ["Mandarina", "Naranja", "Azafrán"],
@@ -567,7 +567,7 @@ export const arabProducts: Product[] = [
     price: 50000,
     image: "/images/mockups/opulent_dubai.webp",
     category: "unisex",
-    description: "La esencia del lujo de Dubai capturada en un frasco. Una fragancia rica, ambarada y majestuosa.",
+    description: "La esencia del lujo de Dubai capturada en un frasco. Una fragancia rica, aÁmbarada y majestuosa.",
     size: "100ml",
     notes: {
       top: ["Azafrán", "Cítricos"],
@@ -632,7 +632,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Menta", "Grosellas negras", "Limón", "Pimienta rosa"],
       heart: ["Manzana", "Incienso", "Cedro"],
-      base: ["Jengibre", "Sándalo", "Pachulí", "Jazmín"]
+      base: ["Jengibre", "Sándalo", "Pachulíí", "Jazmín"]
     },
   },
   {
@@ -677,7 +677,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Limón", "Piña", "Bergamota", "Grosella negra", "Manzana"],
       heart: ["Abedul", "Jazmín", "Rosa"],
-      base: ["Almizcle", "Ámbar gris", "Pachulí", "Vainilla"]
+      base: ["Almizcle", "Ámbar gris", "Pachulíí", "Vainilla"]
     },
   },
   {
@@ -702,11 +702,11 @@ export const arabProducts: Product[] = [
     price: 165000,
     image: "/images/mockups/pharaoh_ramesses.webp",
     category: "hombre",
-    description: "Una fragancia majestuosa y opulenta. Combina el carácter bohemio del ron con tabaco, ámbary un toque dulce de caramelo.",
+    description: "Una fragancia majestuosa y opulenta. Combina el carácter bohemio del ron con tabaco, áÁmbary un toque dulce de caramelo.",
     size: "100ml",
     notes: {
       top: ["Ron", "Cardamomo", "Pimienta rosa", "Bergamota"],
-      heart: ["Tabaco", "Haba Tonka", "Ámbar", "Pachulí"],
+      heart: ["Tabaco", "Haba Tonka", "Ámbar", "Pachulíí"],
       base: ["Caramelo", "Vainilla", "Sándalo", "Cedro"]
     },
   },
@@ -747,7 +747,7 @@ export const arabProducts: Product[] = [
     price: 50000,
     image: "/images/mockups/fakhar_gold.webp",
     category: "unisex",
-    description: "Elegancia dorada en cada gota. Un perfume oriental especiado con un corazón solar y un fondo rico de cuero y ámbar.",
+    description: "Elegancia dorada en cada gota. Un perfume oriental especiado con un corazón solar y un fondo rico de cuero y áÁmbar.",
     size: "100ml",
     notes: {
       top: ["Toronja", "Pimienta rosa", "Cardamomo"],
@@ -767,7 +767,7 @@ export const arabProducts: Product[] = [
     notes: {
       top: ["Pimienta rosa", "Mandarina"],
       heart: ["Cacao", "Azahar", "Jazmín Sambac"],
-      base: ["Vainilla", "Haba Tonka", "Pachulí"]
+      base: ["Vainilla", "Haba Tonka", "Pachulíí"]
     },
   },
   {
@@ -836,13 +836,13 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 80000,
     image: "/images/mockups/club_de_nuit_imperiale_105ml.webp",
-    category: "unisex",
+    category: "mujer",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "105ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Lichi', 'Bergamota', 'Nuez moscada'],
+      heart: ['Rosa turca'],
+      base: ['Vainilla', 'Almizcle', 'Incienso', 'Cachemira']
     },
   },
   {
@@ -851,13 +851,13 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 55000,
     image: "/images/mockups/angham_mockup.webp",
-    category: "unisex",
+    category: "mujer",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Jengibre', 'Mandarina', 'Pimienta rosa'],
+      heart: ['Jazmín', 'Rosa'],
+      base: ['Ámbar', 'Vainilla']
     },
   },
   {
@@ -869,10 +869,10 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Lichi', 'Cactus'],
+      heart: ['Rosa de los valles', 'Cítricos'],
+      base: ['Almizcle blanco']
     },
   },
   {
@@ -899,10 +899,10 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Melocotón (durazno)', 'Mandarina'],
+      heart: ['Notas florales blancas'],
+      base: ['Caramelo', 'Sándalo']
     },
   },
   {
@@ -914,10 +914,10 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Agua de coco', 'Bergamota'],
+      heart: ['Jazmín'],
+      base: ['Notas marinas', 'Almizcle blanco']
     },
   },
   {
@@ -929,10 +929,10 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Azafrán', 'Jazmín'],
+      heart: ['Madera de ámbar'],
+      base: ['Ámbar gris', 'Resina de abeto']
     },
   },
   {
@@ -944,10 +944,10 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Naranja siciliana', 'Limón siciliano', 'Bergamota de Calabria'],
+      heart: ['Notas frutales mixtas'],
+      base: ['Vainilla de Madagascar', 'Almizcle blanco']
     },
   },
   {
@@ -956,13 +956,13 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 90000,
     image: "/images/mockups/luquid_brun_100ml.webp",
-    category: "unisex",
+    category: "hombre",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Canela', 'Cardamomo', 'Azahar'],
+      heart: ['Vainilla de Madagascar'],
+      base: ['Ámbar', 'Notas amaderadas']
     },
   },
   {
@@ -974,25 +974,25 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Coco', 'Cítricos', 'Piña'],
+      heart: ['Ylang-ylang', 'Jazmín'],
+      base: ['Vainilla', 'Almizcle']
     },
   },
   {
     id: 168,
-    name: "Mayar",
+    name: "Mayar EDP",
     brand: "Lattafa",
     price: 50000,
     image: "/images/mockups/mayar_mockup.webp",
     category: "mujer",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Frambuesa', 'Lichi'],
+      heart: ['Rosa blanca', 'Peonía'],
+      base: ['Almizcle']
     },
   },
   {
@@ -1001,13 +1001,13 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 50000,
     image: "/images/mockups/qimmah_for_women_100ml.webp",
-    category: "unisex",
+    category: "mujer",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Almendra', 'Café'],
+      heart: ['Jazmín', 'Haba tonka', 'Cacao'],
+      base: ['Sándalo', 'Vainilla']
     },
   },
   {
@@ -1016,28 +1016,328 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 55000,
     image: "/images/mockups/sceptre_malachite_100ml.webp",
-    category: "unisex",
+    category: "hombre",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Salvia esclarea', 'Mandarina'],
+      heart: ['Notas minerales'],
+      base: ['Gamuza', 'Ámbar']
     },
   },
   {
     id: 171,
-    name: "Tiramisú Caramel",
+    name: "Tiramisu Caramel",
     brand: "Lattafa",
     price: 50000,
     image: "/images/mockups/tiramisú_caramel_100ml.webp",
-    category: "unisex",
+    category: "mujer",
     description: "Una nueva y exclusiva adición a la colección premium de perfumería árabe.",
     size: "100ml",
-    notes: {
-      top: ["Notas cítricas"],
-      heart: ["Especias", "Ámbar"],
-      base: ["Maderas", "Almizcle"]
+        notes: {
+      top: ['Café', 'Cacao', 'Leche'],
+      heart: ['Caramelo'],
+      base: ['Vainilla', 'Azúcar']
     },
   }
+,  {
+    id: 172,
+    name: "9 PM Femme",
+    brand: "Afnan",
+    price: 50000,
+    image: "/images/mockups/9_pm_femme_mockup.webp",
+    category: "mujer",
+    description: "Una fragancia femenina vibrante y seductora, ideal para momentos especiales.",
+    size: "100ml",
+        notes: {
+      top: ['Frambuesa', 'Manzana', 'Naranja'],
+      heart: ['Violeta', 'Jazmín', 'Iris'],
+      base: ['Pino', 'Cedro', 'Ámbar']
+    },
+  },
+  {
+    id: 173,
+    name: "Al Haramain Amber Oud",
+    brand: "Al Haramain",
+    price: 65000,
+    image: "/images/mockups/amber_oud_mockup.webp",
+    category: "unisex",
+    description: "La esencia del lujo oriental en un frasco generoso. Una mezcla rica de áÁmbar y oud.",
+    size: "120ml",
+        notes: {
+      top: ['Romero', 'Bergamota', 'Limón'],
+      heart: ['Cedro', 'Especias'],
+      base: ['Notas amaderadas', 'Ámbar', 'Almizcle']
+    },
+  },
+  {
+    id: 174,
+    name: "Amethyst",
+    brand: "Lattafa",
+    price: 50000,
+    image: "/images/mockups/amethyst_mockup.webp",
+    category: "unisex",
+    description: "Una interpretación floral y especiada del oud, inspirada en Initio Atomic Rose.",
+    size: "100ml",
+        notes: {
+      top: ['Pimienta rosa', 'Bergamota'],
+      heart: ['Rosa turca', 'Rosa de Bulgaria', 'Jazmín'],
+      base: ['Madera de agar (Oud)', 'Ámbar', 'Vainilla']
+    },
+  },
+  {
+    id: 175,
+    name: "Asad Bourbon",
+    brand: "Lattafa",
+    price: 55000,
+    image: "/images/mockups/asad_zanzibar_mockup.webp",
+    category: "hombre",
+    description: "Una fragancia tropical y audaz que evoca la brisa del océano y especias exóticas.",
+    size: "100ml",
+        notes: {
+      top: ['Pimienta negra', 'Piña'],
+      heart: ['Café', 'Pachulíí', 'Iris'],
+      base: ['Vainilla', 'Ámbar', 'Benjuí']
+    },
+  },
+  {
+    id: 176,
+    name: "Club de Nuit Male",
+    brand: "Armaf",
+    price: 60000,
+    image: "/images/mockups/maleka_mockup.webp",
+    category: "unisex",
+    description: "Elegancia y misterio en una fragancia floral aÁmbarada para la mujer moderna.",
+    size: "105ml",
+        notes: {
+      top: ['Limón', 'Piña', 'Bergamota', 'Grosellas negras'],
+      heart: ['Abedul', 'Jazmín', 'Rosa'],
+      base: ['Almizcle', 'Ámbar gris', 'Pachulíí']
+    },
+  },
+  {
+    id: 177,
+    name: "Confidential Private Gold",
+    brand: "Lattafa",
+    price: 45000,
+    image: "/images/mockups/private_gold_mockup.webp",
+    category: "unisex",
+    description: "Un aroma frutal y almizclado que irradia lujo y sofisticación.",
+    size: "100ml",
+        notes: {
+      top: ['Melocotón (durazno)', 'Frambuesa', 'Pera', 'Maracuyá'],
+      heart: ['Lirio de los valles'],
+      base: ['Sándalo', 'Vainilla', 'Almizcle']
+    },
+  },
+  {
+    id: 178,
+    name: "Eclaire",
+    brand: "Lattafa",
+    price: 55000,
+    image: "/images/mockups/eclaire_mockup.webp",
+    category: "mujer",
+    description: "Una delicia gourmand que combina caramelo y flores blancas de manera exquisita.",
+    size: "100ml",
+        notes: {
+      top: ['Caramelo', 'Leche', 'Azúcar'],
+      heart: ['Miel', 'Flores blancas'],
+      base: ['Vainilla', 'Almizcle']
+    },
+  },
+  {
+    id: 179,
+    name: "Emeer",
+    brand: "Lattafa",
+    price: 70000,
+    image: "/images/mockups/emeer_mockup.webp",
+    category: "unisex",
+    description: "Una fragancia majestuosa con una presentación de lujo, perfecta para ocasiones reales.",
+    size: "100ml",
+        notes: {
+      top: ['Limón', 'Bergamota', 'Bayas de enebro'],
+      heart: ['Salvia', 'Cardamomo'],
+      base: ['Sándalo', 'Incienso', 'Pachulíí']
+    },
+  },
+  {
+    id: 180,
+    name: "Fakhar Black",
+    brand: "Lattafa",
+    price: 45000,
+    image: "/images/mockups/fakhar_black_mockup.webp",
+    category: "hombre",
+    description: "Inspirada en YSL Y EDP, una fragancia fresca y aromática para el hombre dinámico.",
+    size: "100ml",
+        notes: {
+      top: ['Manzana', 'Jengibre', 'Bergamota'],
+      heart: ['Lavanda', 'Salvia', 'Bayas de enebro'],
+      base: ['Haba tonka', 'Ámbar']
+    },
+  },
+  {
+    id: 181,
+    name: "Fakhar Platinum",
+    brand: "Lattafa",
+    price: 45000,
+    image: "/images/mockups/fakhar_platinum_mockup.webp",
+    category: "hombre",
+    description: "Una variante elegante y sofisticada con un perfil olfativo metálico y fresco.",
+    size: "100ml",
+        notes: {
+      top: ['Toronja (pomelo)', 'Notas marinas'],
+      heart: ['Especias', 'Ládano'],
+      base: ['Notas amaderadas', 'Ámbar gris']
+    },
+  },
+  {
+    id: 182,
+    name: "Ghost Spectre",
+    brand: "Fragrance World",
+    price: 50000,
+    image: "/images/mockups/ghost_spectre_mockup.webp",
+    category: "unisex",
+    description: "Una fragancia misteriosa y envolvente con una estela inconfundible.",
+    size: "100ml",
+        notes: {
+      top: ['Notas especiadas'],
+      heart: ['Notas amaderadas'],
+      base: ['Ámbar', 'Toque ahumado']
+    },
+  },
+  {
+    id: 183,
+    name: "Happy Brush",
+    brand: "Lattafa",
+    price: 35000,
+    image: "/images/mockups/happy_brush_mockup.webp",
+    category: "mujer",
+    description: "Una fragancia alegre y juvenil en un formato práctico de 75ml.",
+    size: "75ml",
+        notes: {
+      top: ['Frutas dulces'],
+      heart: ['Notas florales suaves'],
+      base: ['Almizcle limpio']
+    },
+  },
+  {
+    id: 184,
+    name: "La Vivacite Intensa",
+    brand: "Maison Alhambra",
+    price: 48000,
+    image: "/images/mockups/vivacite_mockup.webp",
+    category: "mujer",
+    description: "Una explosión de vitalidad y elegancia floral para la mujer decidida.",
+    size: "100ml",
+        notes: {
+      top: ['Bergamota', 'Pera'],
+      heart: ['Nardos', 'Flor de azahar', 'Jazmín'],
+      base: ['Pachulíí', 'Vainilla']
+    },
+  },
+  {
+    id: 185,
+    name: "No. 2 Men",
+    brand: "Fragrance World",
+    price: 55000,
+    image: "/images/mockups/no2_mockup.webp",
+    category: "hombre",
+    description: "Inspirada en Rosendo Mateu No. 2, una fragancia de cuero y flores de alta costura.",
+    size: "100ml",
+        notes: {
+      top: ['Notas verdes', 'Especias', 'Bergamota'],
+      heart: ['Lavanda', 'Gardenia', 'Jengibre'],
+      base: ['Incienso', 'Sándalo']
+    },
+  },
+  {
+    id: 186,
+    name: "Oud for Glory",
+    brand: "Lattafa",
+    price: 50000,
+    image: "/images/mockups/oud_glory_mockup.webp",
+    category: "unisex",
+    description: "El icónico 'Oud for Glory', una fragancia potente y mística basada en el oud más puro.",
+    size: "100ml",
+        notes: {
+      top: ['Azafrán', 'Nuez moscada', 'Lavanda'],
+      heart: ['Madera de agar (Oud)'],
+      base: ['Pachulíí', 'Almizcle']
+    },
+  },
+  {
+    id: 187,
+    name: "Salvo Intense",
+    brand: "Maison Alhambra",
+    price: 45000,
+    image: "/images/mockups/salvo_intense_mockup.webp",
+    category: "hombre",
+    description: "Inspirada en Sauvage Elixir, una fragancia extremadamente concentrada y especiada.",
+    size: "100ml",
+        notes: {
+      top: ['Pimienta de Sichuan', 'Bergamota de Calabria'],
+      heart: ['Lavanda', 'Pachulíí'],
+      base: ['Ambroxan']
+    },
+  },
+  {
+    id: 188,
+    name: "Sublime",
+    brand: "Lattafa",
+    price: 50000,
+    image: "/images/mockups/sublime_mockup.webp",
+    category: "unisex",
+    description: "Una fragancia frutal y vibrante con notas de manzana roja y lichi.",
+    size: "100ml",
+        notes: {
+      top: ['Manzana', 'Lichi'],
+      heart: ['Rosa', 'Ciruela', 'Jazmín'],
+      base: ['Vainilla', 'Musgo', 'Pachulíí']
+    },
+  },
+  {
+    id: 189,
+    name: "Supremacy Pour Homme",
+    brand: "Afnan",
+    price: 55000,
+    image: "/images/mockups/supremacy_mockup.webp",
+    category: "hombre",
+    description: "Una fragancia poderosa y elegante inspirada en el legendario Aventus.",
+    size: "100ml",
+    notes: {
+      top: ["Piña", "Grosellas negras", "Bergamota", "Manzana"],
+      heart: ["Abedul", "Jazmín"],
+      base: ["Almizcle", "Ámbar gris"]
+    },
+  },
+  {
+    id: 190,
+    name: "Viking Kashmir",
+    brand: "Fragrance World",
+    price: 50000,
+    image: "/images/mockups/viking_kashmir_mockup.webp",
+    category: "unisex",
+    description: "Una mezcla fresca y especiada que evoca la fuerza y el espíritu de los exploradores.",
+    size: "100ml",
+    notes: {
+      top: ["Pimienta rosa", "Menta", "Limón"],
+      heart: ["Lavanda", "Clavo de olor", "Pimienta de Jamaica"],
+      base: ["Sándalo", "Vetiver"]
+    },
+  },
+  {
+    id: 191,
+    name: "Yara",
+    brand: "Lattafa",
+    price: 45000,
+    image: "/images/mockups/yara_mockup.webp",
+    category: "mujer",
+    description: "El famoso 'perfume rosa', una fragancia tropical y cremosa que encanta a todos.",
+    size: "100ml",
+    notes: {
+      top: ["Orquídea", "Heliotropo", "Mandarina"],
+      heart: ["Notas tropicales"],
+      base: ["Vainilla", "Almizcle", "Sándalo"]
+    },
+  },
 ];
