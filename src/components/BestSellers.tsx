@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { Product } from '../data/products';
 import { useProductOverrides } from '../context/ProductOverridesContext';
 import { useCart } from '../context/CartContext';
+import { formatPrice } from '../utils/formatters';
 import ProductModal from './ProductModal';
 
 export default function BestSellers() {
@@ -9,14 +10,6 @@ export default function BestSellers() {
   const bestSellers = mergedProducts.filter(p => p.isBestSeller);
   const { addToCart } = useCart();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-AR', {
-      style: 'currency',
-      currency: 'ARS',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
 
   return (
     <section id="bestsellers" className="section-padding bg-black-base">

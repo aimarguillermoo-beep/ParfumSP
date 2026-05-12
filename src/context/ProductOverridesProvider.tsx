@@ -49,7 +49,6 @@ export function ProductOverridesProvider({ children }: { children: ReactNode }) 
         'postgres_changes',
         { event: '*', schema: 'public', table: TABLE_NAME },
         (payload) => {
-          console.log('Real-time change received:', payload);
           
           if (payload.eventType === 'DELETE') {
             setOverrides(prev => {

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { Product } from '../../data/products';
 import type { ProductOverride } from '../../context/ProductOverridesContext';
+import { formatPrice } from '../../utils/formatters';
 
 interface AdminProductRowProps {
   product: Product;
@@ -37,9 +38,6 @@ export default function AdminProductRow({
     setSavedField(field);
     setTimeout(() => setSavedField(null), 1500);
   };
-
-  const formatPrice = (price: number) =>
-    new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', minimumFractionDigits: 0 }).format(price);
 
   const handlePriceSave = () => {
     const newPrice = parseInt(priceInput);

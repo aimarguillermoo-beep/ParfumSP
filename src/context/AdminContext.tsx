@@ -25,15 +25,15 @@ export function AdminProvider({ children }: { children: ReactNode }) {
   });
 
   const login = useCallback((password: string): boolean => {
-    const adminPassword = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123';
-    if (password === adminPassword) {
-      setIsAdmin(true);
-      sessionStorage.setItem(ADMIN_SESSION_KEY, 'true');
-      setIsLoginModalOpen(false);
-      setIsPanelOpen(true);
-      return true;
+    const adminPassword = import.meta.env.VITE_ADMIN_PASSWORD;
+    if (!adminPassword || password !== adminPassword) {
+      return false;
     }
-    return false;
+    setIsAdmin(true);
+    sessionStorage.setItem(ADMIN_SESSION_KEY, 'true');
+    setIsLoginModalOpen(false);
+    setIsPanelOpen(true);
+    return true;
   }, []);
 
   const logout = useCallback(() => {
