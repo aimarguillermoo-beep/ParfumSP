@@ -65,7 +65,7 @@ export default function App() {
       {/* Admin access button - fixed top-right corner */}
       <button
         onClick={() => isAdmin ? setIsPanelOpen(true) : setIsLoginModalOpen(true)}
-        className="fixed top-5 right-4 z-50 p-2 transition-all duration-300 opacity-20 hover:opacity-100 hidden sm:block"
+        className="fixed top-5 right-4 z-50 p-2 transition-all duration-300 opacity-0 hidden sm:block cursor-default"
         id="admin-access-button"
         aria-label="Acceso administrador"
       >

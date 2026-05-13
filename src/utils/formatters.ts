@@ -18,3 +18,13 @@ export const getWhatsAppUrl = (message: string): string => {
   const cleanNumber = businessInfo.contact.whatsapp.number.replace(/\D/g, '');
   return `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
 };
+
+/**
+ * Normalizes a string by converting it to lowercase and removing accents.
+ */
+export const normalizeString = (str: string): string => {
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+};

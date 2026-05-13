@@ -87,7 +87,7 @@ export default function Navbar() {
           {/* Mobile admin key - between cart and hamburger */}
           <button
             onClick={() => isAdmin ? setIsPanelOpen(true) : setIsLoginModalOpen(true)}
-            className="sm:hidden p-2 opacity-30 hover:opacity-100 transition-all duration-300"
+            className="sm:hidden p-2 opacity-0 transition-all duration-300 cursor-default"
             aria-label="Acceso administrador"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gold-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>

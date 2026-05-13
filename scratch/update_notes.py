@@ -2,8 +2,7 @@ import os
 
 FILE_PATH = r"c:\Users\Guille\Desktop\Parfum SP\src\data\arabProducts.ts"
 
-NEW_PRODUCTS = """  },
-  {
+NEW_PRODUCTS = """  {
     id: 206,
     name: "Badee Al Oud Noble Blush",
     brand: "Lattafa",
@@ -13,9 +12,9 @@ NEW_PRODUCTS = """  },
     description: "Una fragancia femenina y dulce que combina la cremosidad del merengue con la delicadeza de la rosa.",
     size: "100ml",
     notes: {
-      top: ["Leche de rosas"],
-      heart: ["Merengue", "Almendra"],
-      base: ["Vainilla", "Almizcle", "Sándalo"]
+      top: ["Notas florales suaves"],
+      heart: ["Bayas"],
+      base: ["Almizcle blanco"]
     },
   },
   {
@@ -28,9 +27,9 @@ NEW_PRODUCTS = """  },
     description: "Frescura acuática y aromática con un toque cítrico vibrante, ideal para el hombre moderno.",
     size: "100ml",
     notes: {
-      top: ["Naranja", "Toronja", "Artemisia"],
-      heart: ["Menta", "Lavanda"],
-      base: ["Ambroxan", "Ciprés", "Pachulí"]
+      top: ["Notas marinas", "Pomelo (toronja)"],
+      heart: ["Laurel"],
+      base: ["Ámbar gris"]
     },
   },
   {
@@ -43,9 +42,9 @@ NEW_PRODUCTS = """  },
     description: "Un equilibrio perfecto entre cítricos dulces y notas amaderadas cálidas, con un corazón de caramelo.",
     size: "100ml",
     notes: {
-      top: ["Mandarina", "Naranja", "Azafrán", "Salvia"],
-      heart: ["Caramelo", "Haba Tonka", "Caléndula"],
-      base: ["Ambroxan", "Cedro", "Vetiver"]
+      top: ["Mandarina", "Naranja", "Azafrán"],
+      heart: ["Caramelo"],
+      base: ["Toque dulce"]
     },
   },
   {
@@ -58,9 +57,9 @@ NEW_PRODUCTS = """  },
     description: "Inspirada en la elegancia italiana, esta fragancia cítrica y amaderada evoca la frescura del Mediterráneo.",
     size: "100ml",
     notes: {
-      top: ["Mandarina", "Limón", "Bergamota"],
-      heart: ["Cedro"],
-      base: ["Sándalo", "Ámbar"]
+      top: ["Notas cítricas"],
+      heart: ["Notas herbales"],
+      base: ["Almizcle limpio"]
     },
   },
   {
@@ -69,13 +68,13 @@ NEW_PRODUCTS = """  },
     brand: "Lattafa Pride",
     price: 55000,
     image: "/images/mockups/play.webp",
-    category: "unisex",
+    category: "mujer",
     description: "Una fragancia juguetona y dinámica que combina frutas jugosas con un fondo amaderado sofisticado.",
     size: "100ml",
     notes: {
-      top: ["Jengibre", "Mandarina", "Limón"],
-      heart: ["Ruibarbo", "Ciruela", "Jazmín", "Violeta"],
-      base: ["Maderas preciosas", "Ámbar", "Almizcle"]
+      top: ["Notas frutales dulces"],
+      heart: ["Flores blancas"],
+      base: ["Vainilla"]
     },
   },
   {
@@ -88,9 +87,9 @@ NEW_PRODUCTS = """  },
     description: "Un extracto de perfume de alta gama, potente y lujoso, con una estela inconfundible de cuero y ámbar.",
     size: "55ml",
     notes: {
-      top: ["Piña", "Pera", "Caramelo", "Pimienta rosa"],
-      heart: ["Madera blanca", "Musgo de roble", "Jazmín"],
-      base: ["Ambroxan", "Cuero", "Vainilla", "Ámbar"]
+      top: ["Notas cítricas"],
+      heart: ["Especias picantes"],
+      base: ["Almizcle", "Madera"]
     },
   },
   {
@@ -99,13 +98,13 @@ NEW_PRODUCTS = """  },
     brand: "Lattafa",
     price: 45000,
     image: "/images/mockups/untamed.webp",
-    category: "unisex",
+    category: "hombre",
     description: "Una versión audaz y salvaje de Qaed Al Fursan, con especias cálidas y un fondo ambarado profundo.",
     size: "90ml",
     notes: {
-      top: ["Canela", "Cardamomo", "Nuez moscada"],
-      heart: ["Caramelo", "Lavanda", "Salvia"],
-      base: ["Ámbar", "Cedro", "Vetiver"]
+      top: ["Piña", "Azafrán"],
+      heart: ["Notas amaderadas"],
+      base: ["Ámbar"]
     },
   },
   {
@@ -118,31 +117,38 @@ NEW_PRODUCTS = """  },
     description: "Una fragancia oriental cautivadora con la calidez de la canela y la profundidad de la vainilla absoluta.",
     size: "100ml",
     notes: {
-      top: ["Almendra amarga", "Canela"],
-      heart: ["Akigalawood", "Jazmín"],
-      base: ["Absoluto de vainilla", "Haba Tonka", "Ámbar"]
+      top: ["Canela"],
+      heart: ["Praliné", "Dátiles"],
+      base: ["Vainilla", "Incienso"]
     },
   },
 ];"""
 
 def main():
     with open(FILE_PATH, "r", encoding="utf-8") as f:
-        content = f.read()
-    
-    # Replace the last "  },\n];" with the new products
-    # We find the last occurrence of "  },\n];"
-    search_str = "  },\n];"
-    if search_str in content:
-        new_content = content.replace(search_str, NEW_PRODUCTS, content.count(search_str)) # Replace the last one
-        # Wait, content.replace replaces all by default. I want only the last one.
-        parts = content.rsplit(search_str, 1)
-        new_content = NEW_PRODUCTS.join(parts)
+        lines = f.readlines()
+        
+    start_idx = -1
+    for i, line in enumerate(lines):
+        if "id: 206," in line:
+            start_idx = i - 1  # Get the "  {"
+            break
+            
+    if start_idx != -1:
+        # End index is where ]; is
+        end_idx = len(lines) - 1
+        while "];" not in lines[end_idx] and end_idx > start_idx:
+            end_idx -= 1
+            
+        new_lines = lines[:start_idx]
+        new_lines.append(NEW_PRODUCTS + "\n")
         
         with open(FILE_PATH, "w", encoding="utf-8") as f:
-            f.write(new_content)
-        print("Success")
+            f.writelines(new_lines)
+            
+        print("Notes updated successfully.")
     else:
-        print("Could not find the target string")
+        print("Could not find id: 206")
 
 if __name__ == "__main__":
     main()

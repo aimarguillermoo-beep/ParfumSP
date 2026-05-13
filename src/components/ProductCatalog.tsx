@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ARAB_BRANDS } from '../data/products';
 import type { Product } from '../data/products';
 import { useProductOverrides } from '../context/ProductOverridesContext';
+import { normalizeString } from '../utils/formatters';
 import ProductCard from './ProductCard';
 import ProductModal from './ProductModal';
 
@@ -34,8 +35,8 @@ export default function ProductCatalog() {
 
     const matchesSearch =
       searchTerm === '' ||
-      product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.brand.toLowerCase().includes(searchTerm.toLowerCase());
+      normalizeString(product.name).includes(normalizeString(searchTerm)) ||
+      normalizeString(product.brand).includes(normalizeString(searchTerm));
     return matchesCategory && matchesSearch;
   });
 
