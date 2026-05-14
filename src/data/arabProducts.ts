@@ -667,17 +667,17 @@ export const arabProducts: Product[] = [
   },
   {
     id: 145,
-    name: "Club de Nuit Intense Man",
+    name: "Club de Nuit Urban Man Elixir",
     brand: "Armaf",
     price: 60000,
-    image: "/images/mockups/club_de_nuit_intense_man.webp",
+    image: "/images/mockups/club_de_nuit_urban_man_elixir_100ml.webp",
     category: "hombre",
-    description: "Un clásico moderno. Una fragancia amaderada y especiada conocida por su apertura cítrica vibrante y su fondo ahumado y varonil.",
-    size: "105ml",
+    description: "Una mezcla muy potente que recuerda a Sauvage combinada con toques de Aventus.",
+    size: "100ml",
     notes: {
-      top: ["Limón", "Piña", "Bergamota", "Grosella negra", "Manzana"],
-      heart: ["Abedul", "Jazmín", "Rosa"],
-      base: ["Almizcle", "Ámbar gris", "Pachulíí", "Vainilla"]
+      top: ["Bergamota", "Pimienta rosa", "Jazmín", "Flor de azahar"],
+      heart: ["Lavanda", "Geranio", "Azafrán", "Elemí", "Vetiver"],
+      base: ["Ambroxan", "Pachulí", "Ámbar", "Cedro", "Ládano"]
     },
   },
   {
@@ -1670,4 +1670,110 @@ export const arabProducts: Product[] = [
       base: ["Vainilla", "Incienso"]
     },
   },
+  {
+    id: 214,
+    name: "Atlantis Extrait",
+    brand: "Afnan",
+    price: 55000,
+    image: "/images/mockups/atlantis_extrait_100ml.webp",
+    category: "unisex",
+    description: "La versión extracto del Atlas tradicional, un acuático extremo de larguísima duración.",
+    size: "100ml",
+    notes: {
+      top: ["Notas marinas", "Sal", "Calone", "Cítricos brillantes"],
+      heart: ["Notas florales acuáticas", "Jengibre"],
+      base: ["Ámbar gris", "Musgo de roble", "Maderas almizcladas"]
+    },
+  },
+  {
+    id: 215,
+    name: "The One EDP",
+    brand: "Dolce & Gabbana",
+    price: 120000,
+    image: "/images/mockups/dolce_y_gabbana_the_one_edp_100ml.webp",
+    category: "hombre",
+    description: "Un clásico súper elegante, cálido y seductor.",
+    size: "100ml",
+    notes: {
+      top: ["Pomelo", "Cilantro", "Albahaca"],
+      heart: ["Jengibre", "Cardamomo", "Flor de azahar"],
+      base: ["Tabaco", "Ámbar", "Cedro"]
+    },
+  },
+  {
+    id: 216,
+    name: "La Collection d'Antiquités 1910",
+    brand: "Lattafa",
+    price: 65000,
+    image: "/images/mockups/la_collection_d_antiquites_1910_100ml.webp",
+    category: "unisex",
+    description: "Una fragancia de la línea premium de Lattafa, muy sofisticada.",
+    size: "100ml",
+    notes: {
+      top: ["Manzana", "Rosa", "Canela"],
+      heart: ["Pachulí", "Notas amaderadas finas"],
+      base: ["Vainilla", "Haba tonka", "Notas balsámicas"]
+    },
+  },
+  {
+    id: 217,
+    name: "Toy Boy EDP",
+    brand: "Moschino",
+    price: 95000,
+    image: "/images/mockups/moschino_toy_boy_edp_100ml.webp",
+    category: "unisex",
+    description: "Aunque comercialmente se lanzó para hombres, es un perfume de rosa especiada muy oscuro y gótico que funciona de manera espectacular como unisex.",
+    size: "100ml",
+    notes: {
+      top: ["Pimienta rosa", "Pera", "Nuez moscada de Indonesia", "Elemí", "Bergamota"],
+      heart: ["Rosa", "Magnolia", "Clavo de olor", "Lino"],
+      base: ["Cachemira", "Vetiver", "Sándalo", "Ámbar"]
+    },
+  },
+  {
+    id: 218,
+    name: "Polo Black",
+    brand: "Ralph Lauren",
+    price: 110000,
+    image: "/images/mockups/polo_ralph_lauren_black_125ml.webp",
+    category: "hombre",
+    description: "Fresco e informal, pero con un fondo amaderado muy masculino.",
+    size: "125ml",
+    notes: {
+      top: ["Mango congelado", "Mandarina", "Limón"],
+      heart: ["Salvia esclarea", "Notas verdes aromáticas"],
+      base: ["Sándalo", "Pachulí", "Haba tonka"]
+    },
+  },
+  {
+    id: 219,
+    name: "Royal Blend",
+    brand: "Fragrance World",
+    price: 55000,
+    image: "/images/mockups/royal_blend_100ml.webp",
+    category: "unisex",
+    description: "Inspirado fuertemente en Angels' Share, un aroma ultra gourmand y lujoso.",
+    size: "100ml",
+    notes: {
+      top: ["Coñac", "Canela en rama"],
+      heart: ["Haba tonka", "Roble", "Praliné"],
+      base: ["Vainilla", "Sándalo", "Notas licorosas dulces"]
+    },
+  },
+  {
+    id: 220,
+    name: "Stronger With You",
+    brand: "Emporio Armani",
+    price: 135000,
+    image: "/images/mockups/stronger_whit_you_100ml.webp",
+    category: "hombre",
+    description: "Un aroma dulce, especiado y muy adictivo para climas fríos.",
+    size: "100ml",
+    notes: {
+      top: ["Cardamomo", "Pimienta rosa", "Hojas de violeta", "Menta"],
+      heart: ["Piña", "Canela", "Melón", "Salvia", "Lavanda"],
+      base: ["Vainilla", "Castaña", "Amberwood", "Cedro", "Madera de gaiac"]
+    },
+  },
 ];
+
