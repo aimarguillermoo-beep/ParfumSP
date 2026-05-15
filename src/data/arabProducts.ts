@@ -839,7 +839,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "La versión más lujosa y floral de la línea Club de Nuit, con rosa turca e incienso.",
     size: "105ml",
-        notes: {
+    notes: {
       top: ['Lichi', 'Bergamota', 'Nuez moscada'],
       heart: ['Rosa turca'],
       base: ['Vainilla', 'Almizcle', 'Incienso']
@@ -854,7 +854,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Una melodía olfativa floral y ambarada con un toque picante de jengibre.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Jengibre', 'Mandarina', 'Pimienta rosa'],
       heart: ['Jazmín', 'Rosa'],
       base: ['Ámbar', 'Vainilla']
@@ -869,7 +869,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Un elixir dorado de lichi y cactus con un fondo suave de almizcle blanco.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Lichi', 'Cactus'],
       heart: ['Rosa de los valles', 'Cítricos'],
       base: ['Almizcle blanco']
@@ -899,7 +899,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Dulzura celestial de melocotón y caramelo sobre un fondo suave de sándalo.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Melocotón', 'Mandarina'],
       heart: ['Notas florales blancas'],
       base: ['Caramelo', 'Sándalo']
@@ -914,7 +914,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Un paraíso tropical de agua de coco y notas marinas refrescantes.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Agua de coco', 'Bergamota'],
       heart: ['Jazmín'],
       base: ['Notas marinas', 'Almizcle blanco']
@@ -929,7 +929,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Elegancia barroca con azafrán, jazmín y la profundidad del ámbar gris.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Azafrán', 'Jazmín'],
       heart: ['Madera de ámbar'],
       base: ['Ámbar gris', 'Resina de abeto']
@@ -944,7 +944,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una explosión frutal cítrica con la cremosidad de la vainilla de Madagascar.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Naranja siciliana', 'Limón siciliano', 'Bergamota de Calabria'],
       heart: ['Notas frutales mixtas'],
       base: ['Vainilla de Madagascar']
@@ -959,7 +959,7 @@ export const arabProducts: Product[] = [
     category: "hombre",
     description: "Un aroma cálido y envolvente de vainilla de Madagascar y especias finas.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Canela', 'Cardamomo', 'Azahar'],
       heart: ['Vainilla de Madagascar'],
       base: ['Ámbar']
@@ -974,7 +974,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Dulzura tropical ilimitada con coco, piña y flores blancas.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Coco', 'Cítricos', 'Piña'],
       heart: ['Ylang-ylang', 'Jazmín'],
       base: ['Vainilla']
@@ -989,7 +989,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Una fragancia femenina vibrante de frambuesa y lichi con un corazón de rosas blancas.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Frambuesa', 'Lichi'],
       heart: ['Rosa blanca', 'Peonía'],
       base: ['Almizcle']
@@ -1004,7 +1004,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Sofisticación gourmet con notas de almendra, café y cacao.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Almendra', 'Café'],
       heart: ['Jazmín'],
       base: ['Haba tonka', 'Cacao', 'Vainilla']
@@ -1019,7 +1019,7 @@ export const arabProducts: Product[] = [
     category: "hombre",
     description: "Una fragancia mineral y aromática con un carácter distintivo y elegante.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Salvia esclarea', 'Mandarina'],
       heart: ['Notas minerales'],
       base: ['Gamuza', 'Ámbar']
@@ -1034,13 +1034,13 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Una delicia irresistible que combina el aroma del café y la leche con caramelo dulce.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Café', 'Cacao', 'Leche'],
       heart: ['Caramelo'],
       base: ['Vainilla', 'Azúcar']
     },
   }
-,  {
+  , {
     id: 172,
     name: "9 PM Femme",
     brand: "Afnan",
@@ -1049,7 +1049,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Una fragancia femenina vibrante y seductora, ideal para momentos especiales.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Frambuesa', 'Manzana', 'Naranja'],
       heart: ['Violeta', 'Jazmín', 'Iris'],
       base: ['Pino', 'Cedro', 'Ámbar']
@@ -1064,7 +1064,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "La esencia del lujo oriental en un frasco generoso. Una mezcla rica de áÁmbar y oud.",
     size: "120ml",
-        notes: {
+    notes: {
       top: ['Romero', 'Bergamota', 'Limón'],
       heart: ['Cedro', 'Especias'],
       base: ['Notas amaderadas', 'Ámbar', 'Almizcle']
@@ -1079,7 +1079,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una interpretación floral y especiada del oud, inspirada en Initio Atomic Rose.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Pimienta rosa', 'Bergamota'],
       heart: ['Rosa turca', 'Rosa de Bulgaria', 'Jazmín'],
       base: ['Madera de agar (Oud)', 'Ámbar', 'Vainilla']
@@ -1094,7 +1094,7 @@ export const arabProducts: Product[] = [
     category: "hombre",
     description: "Una fragancia tropical y audaz que evoca la brisa del océano y especias exóticas.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Pimienta negra', 'Piña'],
       heart: ['Café', 'Pachulíí', 'Iris'],
       base: ['Vainilla', 'Ámbar', 'Benjuí']
@@ -1109,7 +1109,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Elegancia y misterio en una fragancia floral ambarada para la mujer moderna.",
     size: "105ml",
-        notes: {
+    notes: {
       top: ['Limón', 'Piña', 'Bergamota', 'Grosellas negras'],
       heart: ['Abedul', 'Jazmín', 'Rosa'],
       base: ['Almizcle', 'Ámbar gris', 'Pachulí']
@@ -1124,7 +1124,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Un aroma frutal y almizclado que irradia lujo y sofisticación.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Melocotón (durazno)', 'Frambuesa', 'Pera', 'Maracuyá'],
       heart: ['Lirio de los valles'],
       base: ['Sándalo', 'Vainilla', 'Almizcle']
@@ -1139,7 +1139,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Una delicia gourmand que combina caramelo y flores blancas de manera exquisita.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Caramelo', 'Leche', 'Azúcar'],
       heart: ['Miel', 'Flores blancas'],
       base: ['Vainilla', 'Almizcle']
@@ -1154,7 +1154,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una fragancia majestuosa con una presentación de lujo, perfecta para ocasiones reales.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Limón', 'Bergamota', 'Bayas de enebro'],
       heart: ['Salvia', 'Cardamomo'],
       base: ['Sándalo', 'Incienso', 'Pachulíí']
@@ -1169,7 +1169,7 @@ export const arabProducts: Product[] = [
     category: "hombre",
     description: "Inspirada en YSL Y EDP, una fragancia fresca y aromática para el hombre dinámico.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Manzana', 'Jengibre', 'Bergamota'],
       heart: ['Lavanda', 'Salvia', 'Bayas de enebro'],
       base: ['Haba tonka', 'Ámbar']
@@ -1184,7 +1184,7 @@ export const arabProducts: Product[] = [
     category: "hombre",
     description: "Una variante elegante y sofisticada con un perfil olfativo metálico y fresco.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Toronja (pomelo)', 'Notas marinas'],
       heart: ['Especias', 'Ládano'],
       base: ['Notas amaderadas', 'Ámbar gris']
@@ -1199,7 +1199,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una fragancia misteriosa y envolvente con una estela inconfundible.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Notas especiadas'],
       heart: ['Notas amaderadas'],
       base: ['Ámbar', 'Toque ahumado']
@@ -1214,7 +1214,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Una fragancia alegre y juvenil en un formato práctico de 75ml.",
     size: "75ml",
-        notes: {
+    notes: {
       top: ['Frutas dulces'],
       heart: ['Notas florales suaves'],
       base: ['Almizcle limpio']
@@ -1229,7 +1229,7 @@ export const arabProducts: Product[] = [
     category: "mujer",
     description: "Una explosión de vitalidad y elegancia floral para la mujer decidida.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Bergamota', 'Pera'],
       heart: ['Nardos', 'Flor de azahar', 'Jazmín'],
       base: ['Pachulíí', 'Vainilla']
@@ -1244,7 +1244,7 @@ export const arabProducts: Product[] = [
     category: "hombre",
     description: "Inspirada en Rosendo Mateu No. 2, una fragancia de cuero y flores de alta costura.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Notas verdes', 'Especias', 'Bergamota'],
       heart: ['Lavanda', 'Gardenia', 'Jengibre'],
       base: ['Incienso', 'Sándalo']
@@ -1259,7 +1259,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "El icónico 'Oud for Glory', una fragancia potente y mística basada en el oud más puro.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Azafrán', 'Nuez moscada', 'Lavanda'],
       heart: ['Madera de agar (Oud)'],
       base: ['Pachulíí', 'Almizcle']
@@ -1274,7 +1274,7 @@ export const arabProducts: Product[] = [
     category: "hombre",
     description: "Inspirada en Sauvage Elixir, una fragancia extremadamente concentrada y especiada.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Pimienta de Sichuan', 'Bergamota de Calabria'],
       heart: ['Lavanda', 'Pachulíí'],
       base: ['Ambroxan']
@@ -1289,7 +1289,7 @@ export const arabProducts: Product[] = [
     category: "unisex",
     description: "Una fragancia frutal y vibrante con notas de manzana roja y lichi.",
     size: "100ml",
-        notes: {
+    notes: {
       top: ['Manzana', 'Lichi'],
       heart: ['Rosa', 'Ciruela', 'Jazmín'],
       base: ['Vainilla', 'Musgo', 'Pachulíí']
@@ -1762,7 +1762,7 @@ export const arabProducts: Product[] = [
   },
   {
     id: 220,
-    name: "Stronger With You",
+    name: "Stronger With You Intensely",
     brand: "Emporio Armani",
     price: 135000,
     image: "/images/mockups/stronger_whit_you_100ml.webp",
