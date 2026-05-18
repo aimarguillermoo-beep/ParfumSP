@@ -20,9 +20,9 @@ def add_reflection(img_rgba, crop_height):
     return reflection
 
 def process_one():
-    input_path = Path(r"C:\Users\Guille\Desktop\autocentrar_imagenes\productos_crudos\atlantis_extrait_100ml.webp")
+    input_path = Path(r"C:\Users\Guille\Desktop\autocentrar_imagenes\productos_crudos\jasoor_100ml.jpg")
     bg_path = Path(r"C:\Users\Guille\.gemini\antigravity\brain\3bdcc86d-78f5-465d-81e5-9748a9e28a08\luxury_perfume_bg_1777481460456.png")
-    output_path = Path(r"C:\Users\Guille\Desktop\Parfum SP\public\images\mockups\test_2.webp")
+    output_path = Path(r"C:\Users\Guille\Desktop\Parfum SP\public\images\mockups\test_jasoor.webp")
     
     output_path.parent.mkdir(parents=True, exist_ok=True)
     

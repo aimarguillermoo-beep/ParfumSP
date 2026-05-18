@@ -673,7 +673,7 @@ export const arabProducts: Product[] = [
     image: "/images/mockups/club_de_nuit_urban_man_elixir_100ml.webp",
     category: "hombre",
     description: "Una mezcla muy potente que recuerda a Sauvage combinada con toques de Aventus.",
-    size: "100ml",
+    size: "105ml",
     notes: {
       top: ["Bergamota", "Pimienta rosa", "Jazmín", "Flor de azahar"],
       heart: ["Lavanda", "Geranio", "Azafrán", "Elemí", "Vetiver"],
@@ -973,7 +973,7 @@ export const arabProducts: Product[] = [
     image: "/images/mockups/qaed_al_fursan_unlimited_90ml.webp",
     category: "unisex",
     description: "Dulzura tropical ilimitada con coco, piña y flores blancas.",
-    size: "100ml",
+    size: "90ml",
     notes: {
       top: ['Coco', 'Cítricos', 'Piña'],
       heart: ['Ylang-ylang', 'Jazmín'],
@@ -1243,7 +1243,7 @@ export const arabProducts: Product[] = [
     image: "/images/mockups/no2_mockup.webp",
     category: "hombre",
     description: "Inspirada en Rosendo Mateu No. 2, una fragancia de cuero y flores de alta costura.",
-    size: "100ml",
+    size: "80ml",
     notes: {
       top: ['Notas verdes', 'Especias', 'Bergamota'],
       heart: ['Lavanda', 'Gardenia', 'Jengibre'],
@@ -1633,7 +1633,7 @@ export const arabProducts: Product[] = [
     image: "/images/mockups/precieux.webp",
     category: "hombre",
     description: "Un extracto de perfume de alta gama, potente y lujoso, con una estela inconfundible de cuero y ámbar.",
-    size: "55ml",
+    size: "105ml",
     notes: {
       top: ["Notas cítricas"],
       heart: ["Especias picantes"],
@@ -1925,5 +1925,382 @@ export const arabProducts: Product[] = [
       heart: ["Rosa turca", "Peonía", "Lirio de los valles"],
       base: ["Vainilla", "Maderas suaves", "Almizcle blanco"]
     },
-  }
+  },
+
+  {
+    id: 231,
+    name: "Jasoor",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/jasoor_100ml.webp",
+    category: "unisex",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "100ml",
+    notes: {
+      top: ['Manzana', 'bergamota', 'cardamomo'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 232,
+    name: "Al Haramain Olaf",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/al_haramain_olaf_100ml.webp",
+    category: "unisex",
+    description: "Notas cítricas frescas, especias suaves, notas herbales y una base limpia de almizcle con maderas blancas.",
+    size: "100ml",
+    notes: {
+      top: ['Notas cítricas frescas'],
+      heart: ['especias suaves'],
+      base: ['notas herbales', 'una base limpia de almizcle con maderas blancas']
+    },
+  },
+  {
+    id: 233,
+    name: "Art of Universe I",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/art_of_universe_100ml.webp",
+    category: "unisex",
+    description: "Notas cósmicas/aldehídicas, cítricos, notas florales abstractas, ámbar y almizcle.",
+    size: "100ml",
+    notes: {
+      top: ['Notas cósmicas/aldehídicas'],
+      heart: ['cítricos', 'notas florales abstractas'],
+      base: ['ámbar', 'almizcle']
+    },
+  },
+  {
+    id: 234,
+    name: "Bharara King Soleil",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/bharara_king_soleil_100ml.webp",
+    category: "hombre",
+    description: "Cítricos radiantes (limón, bergamota), notas solares, frutas tropicales, vainilla y un fondo amaderado almizclado muy duradero.",
+    size: "100ml",
+    notes: {
+      top: ['Cítricos radiantes'],
+      heart: ['notas solares', 'frutas tropicales'],
+      base: ['vainilla', 'un fondo amaderado almizclado muy duradero']
+    },
+  },
+  {
+    id: 235,
+    name: "Club de Nuit Sillage",
+    brand: "Armaf",
+    price: 48000,
+    image: "/images/mockups/club_de_nuit_sillage_100ml.webp",
+    category: "hombre",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "105ml",
+    notes: {
+      top: ['Bergamota', 'grosellas negras', 'limón', 'lima', 'hojas de violeta', 'jengibre'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 236,
+    name: "Eter Arabian Sky",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/eter_arabian_sky_100ml.webp",
+    category: "mujer",
+    description: "Notas frutales dulces, flores blancas, acordes ozónicos ligeros, vainilla y almizcle blanco.",
+    size: "100ml",
+    notes: {
+      top: ['Notas frutales dulces'],
+      heart: ['flores blancas', 'acordes ozónicos ligeros'],
+      base: ['vainilla', 'almizcle blanco']
+    },
+  },
+  {
+    id: 237,
+    name: "Exquisite",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/exquisite_100ml.webp",
+    category: "unisex",
+    description: "Chocolate, café, avellana tostada, notas licorosas, vainilla y maderas preciosas. (Un aroma puramente gourmand).",
+    size: "100ml",
+    notes: {
+      top: ['Chocolate', 'café'],
+      heart: ['avellana tostada', 'notas licorosas'],
+      base: ['vainilla', 'maderas preciosas']
+    },
+  },
+  {
+    id: 238,
+    name: "Hawas Cobra",
+    brand: "Rasasi",
+    price: 48000,
+    image: "/images/mockups/hawas_cobra_100ml.webp",
+    category: "hombre",
+    description: "Notas marinas, cítricos chispeantes, especias picantes, un toque herbal y un fondo de ámbar gris con maderas oscuras.",
+    size: "100ml",
+    notes: {
+      top: ['Notas marinas'],
+      heart: ['cítricos chispeantes', 'especias picantes'],
+      base: ['un toque herbal', 'un fondo de ámbar gris con maderas oscuras']
+    },
+  },
+  {
+    id: 239,
+    name: "Hawas Malibu",
+    brand: "Rasasi",
+    price: 48000,
+    image: "/images/mockups/hawas_malibu_100ml.webp",
+    category: "hombre",
+    description: "Una propuesta veraniega con notas oceánicas, mandarina, pomelo, menta helada y un fondo limpio de almizcle y sándalo.",
+    size: "100ml",
+    notes: {
+      top: ['Una propuesta veraniega con notas oceánicas', 'mandarina'],
+      heart: ['pomelo', 'menta helada'],
+      base: ['un fondo limpio de almizcle', 'sándalo']
+    },
+  },
+  {
+    id: 240,
+    name: "Iconic Armaf",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/iconic-armaf_105_ml.webp",
+    category: "hombre",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "100ml",
+    notes: {
+      top: ['Toronja', 'limón', 'menta', 'pimienta rosa', 'cilantro'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 241,
+    name: "Jean Lowe Immortel",
+    brand: "Maison Alhambra",
+    price: 48000,
+    image: "/images/mockups/jean_lowe_immortel_100ml.webp",
+    category: "hombre",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "100ml",
+    notes: {
+      top: ['Pomelo', 'jengibre', 'bergamota'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 242,
+    name: "Lattafa Pride Tharwah Silver",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/lattafa-pride-tharwah-silver-100ml.webp",
+    category: "unisex",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "100ml",
+    notes: {
+      top: ['Menta', 'bergamota'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 243,
+    name: "Mashrabya",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/mashrabya_100ml.webp",
+    category: "unisex",
+    description: "Notas especiadas (azafrán, canela), maderas ricas, madera de agar (Oud), resinas orientales y ámbar.",
+    size: "100ml",
+    notes: {
+      top: ['Notas especiadas'],
+      heart: ['maderas ricas', 'madera de agar'],
+      base: ['resinas orientales', 'ámbar']
+    },
+  },
+  {
+    id: 244,
+    name: "Match Point",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/match_point_100ml.webp",
+    category: "hombre",
+    description: "Notas verdes, albahaca, pimienta rosa, vetiver, cachemira y un fondo amaderado seco.",
+    size: "100ml",
+    notes: {
+      top: ['Notas verdes', 'albahaca'],
+      heart: ['pimienta rosa', 'vetiver'],
+      base: ['cachemira', 'un fondo amaderado seco']
+    },
+  },
+  {
+    id: 245,
+    name: "Odyssey Chocolate Dubai",
+    brand: "Armaf",
+    price: 48000,
+    image: "/images/mockups/odyssey_chocolate_dubai_100ml.webp",
+    category: "unisex",
+    description: "Chocolate negro, cacao en polvo, vainilla, caramelo, avellana y un fondo sutil de sándalo. (Ideal para amantes de los aromas dulces y comestibles).",
+    size: "100ml",
+    notes: {
+      top: ['Chocolate negro', 'cacao en polvo'],
+      heart: ['vainilla', 'caramelo'],
+      base: ['avellana', 'un fondo sutil de sándalo']
+    },
+  },
+  {
+    id: 246,
+    name: "Parfum Thunder",
+    brand: "French Avenue",
+    price: 48000,
+    image: "/images/mockups/parfum-thunder-french-avenue-100ml.webp",
+    category: "unisex",
+    description: "Cuero, notas ahumadas, especias oscuras, ámbar, maderas densas y un toque terroso de pachulí.",
+    size: "100ml",
+    notes: {
+      top: ['Cuero', 'notas ahumadas'],
+      heart: ['especias oscuras', 'ámbar'],
+      base: ['maderas densas', 'un toque terroso de pachulí']
+    },
+  },
+
+  {
+    id: 247,
+    name: "Qaed Al Fursan",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/qaed_al_fursan_100ml.webp",
+    category: "unisex",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "90ml",
+    notes: {
+      top: ['Piña', 'azafrán'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 248,
+    name: "Salvo",
+    brand: "Maison Alhambra",
+    price: 48000,
+    image: "/images/mockups/salvo_100ml.webp",
+    category: "hombre",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "100ml",
+    notes: {
+      top: ['Bergamota de Calabria', 'pimienta'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 249,
+    name: "Taureau de Combat",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/taureau_de_combat_100ml.webp",
+    category: "unisex",
+    description: "Notas de cuero robusto, especias picantes, maderas oscuras, tabaco y un fondo resinoso de ámbar.",
+    size: "100ml",
+    notes: {
+      top: ['Notas de cuero robusto'],
+      heart: ['especias picantes', 'maderas oscuras'],
+      base: ['tabaco', 'un fondo resinoso de ámbar']
+    },
+  },
+  {
+    id: 250,
+    name: "Teriaq Intense",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/teriaq_intense__100ml.webp",
+    category: "mujer",
+    description: "Caramelo, almendra amarga, pimienta rosa, miel, rosa, cuero, vainilla intensa y ládano. (Una bomba dulce, densa y súper seductora).",
+    size: "100ml",
+    notes: {
+      top: ['Caramelo', 'almendra amarga'],
+      heart: ['pimienta rosa', 'miel', 'rosa'],
+      base: ['cuero', 'vainilla intensa', 'ládano']
+    },
+  },
+  {
+    id: 251,
+    name: "Turathi Blue",
+    brand: "Afnan",
+    price: 48000,
+    image: "/images/mockups/turathi_blue_100ml.webp",
+    category: "hombre",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "100ml",
+    notes: {
+      top: ['Pomelo', 'mandarina'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 252,
+    name: "Turathi Electric",
+    brand: "Afnan",
+    price: 48000,
+    image: "/images/mockups/turathi_electric_100ml.webp",
+    category: "unisex",
+    description: "Cítricos eléctricos (limón, lima), menta, notas marinas, jengibre, ambroxan y maderas claras. (Ultra energético y fresco).",
+    size: "100ml",
+    notes: {
+      top: ['Cítricos eléctricos', 'menta'],
+      heart: ['notas marinas', 'jengibre'],
+      base: ['ambroxan', 'maderas claras']
+    },
+  },
+  {
+    id: 253,
+    name: "Vintage Radio",
+    brand: "Lattafa",
+    price: 48000,
+    image: "/images/mockups/vintage_radio_100ml.webp",
+    category: "unisex",
+    description: "Una fragancia oriental premium con un aroma cautivador.",
+    size: "100ml",
+    notes: {
+      top: ['Ciruela', 'lavanda', 'salvia esclarea'],
+      heart: ['Notas medias'],
+      base: ['Notas de fondo']
+    },
+  },
+  {
+    id: 254,
+    name: "Vulcan Feu",
+    brand: "French Avenue",
+    price: 48000,
+    image: "/images/mockups/vulcan_feu_french_avenue_100ml.webp",
+    category: "unisex",
+    description: "Notas minerales, especias ardientes, incienso, humo, maderas quemadas y un fondo cálido de ámbar.",
+    size: "100ml",
+    notes: {
+      top: ['Notas minerales', 'especias ardientes'],
+      heart: ['incienso', 'humo'],
+      base: ['maderas quemadas', 'un fondo cálido de ámbar']
+    },
+  },
+  {
+    id: 255,
+    name: "Your Touch Intense",
+    brand: "Maison Alhambra",
+    price: 48000,
+    image: "/images/mockups/your_touch_intense_100ml.webp",
+    category: "hombre",
+    description: "Mandarina, melón, pimienta rosa, canela, castaña, vainilla y maderas ambaradas. (Estilo Stronger With You Intensely).",
+    size: "100ml",
+    notes: {
+      top: ['Mandarina', 'melón'],
+      heart: ['pimienta rosa', 'canela'],
+      base: ['castaña', 'vainilla', 'maderas ambaradas']
+    },
+  },
 ];
