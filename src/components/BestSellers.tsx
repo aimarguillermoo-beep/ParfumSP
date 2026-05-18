@@ -40,9 +40,9 @@ export default function BestSellers() {
               onClick={() => setSelectedProduct(product)}
               id={`bestseller-${product.id}`}
             >
-              <div className="flex flex-col sm:flex-row">
+              <div className="flex flex-col sm:flex-row sm:h-80">
                 {/* Image */}
-                <div className="relative w-full sm:w-64 h-64 sm:h-auto flex-shrink-0 overflow-hidden bg-black-base">
+                <div className="relative w-full sm:w-64 h-64 sm:h-80 flex-shrink-0 overflow-hidden bg-black-base">
                   <img
                     src={product.image}
                     alt={`${product.brand} ${product.name}`}

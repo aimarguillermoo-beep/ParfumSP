@@ -15,7 +15,6 @@ export const arabProducts: Product[] = [
       heart: ["Gamuza", "Cuero", "Haba Tonka"],
       base: ["Vainilla", "Ámbar", "Almizcle"]
     },
-    isBestSeller: true,
   },
   {
     id: 101,
@@ -106,7 +105,6 @@ export const arabProducts: Product[] = [
       heart: ["Vainilla", "Tabaco", "Azahar"],
       base: ["Haba Tonka", "Benjuí", "Ládano"]
     },
-    isBestSeller: true,
   },
   {
     id: 107,
@@ -137,7 +135,6 @@ export const arabProducts: Product[] = [
       heart: ["Azahar", "Lirio de los valles"],
       base: ["Vainilla", "Haba Tonka", "Ámbar", "Pachulíí"]
     },
-    isBestSeller: true,
   },
   {
     id: 109,
@@ -529,6 +526,7 @@ export const arabProducts: Product[] = [
       heart: ["Geranio", "Incienso", "Ámbar"],
       base: ["Cuero", "Pachulíí", "Almizcle"]
     },
+    isBestSeller: true,
   },
   {
     id: 136,
@@ -814,6 +812,7 @@ export const arabProducts: Product[] = [
       heart: ["Especias", "Ámbar"],
       base: ["Maderas", "Almizcle"]
     },
+    isBestSeller: true,
   },
   {
     id: 157,
@@ -964,6 +963,7 @@ export const arabProducts: Product[] = [
       heart: ['Vainilla de Madagascar'],
       base: ['Ámbar']
     },
+    isBestSeller: true,
   },
   {
     id: 167,
@@ -1594,6 +1594,7 @@ export const arabProducts: Product[] = [
       heart: ["Caramelo"],
       base: ["Toque dulce"]
     },
+    isBestSeller: true,
   },
   {
     id: 209,
@@ -1979,7 +1980,7 @@ export const arabProducts: Product[] = [
     price: 48000,
     image: "/images/mockups/bharara_king_soleil_100ml.webp",
     category: "hombre",
-    description: "Cítricos radiantes (limón, bergamota), notas solares, frutas tropicales, vainilla y un fondo amaderado almizclado muy duradero.",
+    description: "limón, bergamota",
     size: "100ml",
     notes: {
       top: ['Cítricos radiantes'],
@@ -2024,7 +2025,7 @@ export const arabProducts: Product[] = [
     price: 48000,
     image: "/images/mockups/exquisite_100ml.webp",
     category: "unisex",
-    description: "Chocolate, café, avellana tostada, notas licorosas, vainilla y maderas preciosas. (Un aroma puramente gourmand).",
+    description: "Un aroma puramente gourmand",
     size: "100ml",
     notes: {
       top: ['Chocolate', 'café'],
@@ -2114,7 +2115,7 @@ export const arabProducts: Product[] = [
     price: 48000,
     image: "/images/mockups/mashrabya_100ml.webp",
     category: "unisex",
-    description: "Notas especiadas (azafrán, canela), maderas ricas, madera de agar (Oud), resinas orientales y ámbar.",
+    description: "azafrán, canela",
     size: "100ml",
     notes: {
       top: ['Notas especiadas'],
@@ -2144,7 +2145,7 @@ export const arabProducts: Product[] = [
     price: 48000,
     image: "/images/mockups/odyssey_chocolate_dubai_100ml.webp",
     category: "unisex",
-    description: "Chocolate negro, cacao en polvo, vainilla, caramelo, avellana y un fondo sutil de sándalo. (Ideal para amantes de los aromas dulces y comestibles).",
+    description: "Ideal para amantes de los aromas dulces y comestibles",
     size: "100ml",
     notes: {
       top: ['Chocolate negro', 'cacao en polvo'],
@@ -2220,7 +2221,7 @@ export const arabProducts: Product[] = [
     price: 48000,
     image: "/images/mockups/teriaq_intense__100ml.webp",
     category: "mujer",
-    description: "Caramelo, almendra amarga, pimienta rosa, miel, rosa, cuero, vainilla intensa y ládano. (Una bomba dulce, densa y súper seductora).",
+    description: "Una bomba dulce, densa y súper seductora",
     size: "100ml",
     notes: {
       top: ['Caramelo', 'almendra amarga'],
@@ -2250,7 +2251,7 @@ export const arabProducts: Product[] = [
     price: 48000,
     image: "/images/mockups/turathi_electric_100ml.webp",
     category: "unisex",
-    description: "Cítricos eléctricos (limón, lima), menta, notas marinas, jengibre, ambroxan y maderas claras. (Ultra energético y fresco).",
+    description: "limón, lima",
     size: "100ml",
     notes: {
       top: ['Cítricos eléctricos', 'menta'],
@@ -2295,7 +2296,7 @@ export const arabProducts: Product[] = [
     price: 48000,
     image: "/images/mockups/your_touch_intense_100ml.webp",
     category: "hombre",
-    description: "Mandarina, melón, pimienta rosa, canela, castaña, vainilla y maderas ambaradas. (Estilo Stronger With You Intensely).",
+    description: "Estilo Stronger With You Intensely",
     size: "100ml",
     notes: {
       top: ['Mandarina', 'melón'],
