@@ -290,7 +290,7 @@ export const arabProducts: Product[] = [
   {
     id: 120,
     name: "Essence De Blanc",
-    brand: "Lattafa",
+    brand: "French Avenue",
     price: 35000,
     image: "/images/mockups/essence_de_blanc_100ml.webp",
     category: "mujer",
@@ -320,7 +320,7 @@ export const arabProducts: Product[] = [
   {
     id: 122,
     name: "Historic Olmeda",
-    brand: "Lattafa",
+    brand: "Afnan",
     price: 65000,
     image: "/images/mockups/historic_olmeda_100ml.webp",
     category: "hombre",
@@ -832,7 +832,7 @@ export const arabProducts: Product[] = [
   {
     id: 158,
     name: "Club de Nuit Imperiale",
-    brand: "Lattafa",
+    brand: "Armaf",
     price: 80000,
     image: "/images/mockups/club_de_nuit_imperiale_105ml.webp",
     category: "mujer",
@@ -1013,7 +1013,7 @@ export const arabProducts: Product[] = [
   {
     id: 170,
     name: "Sceptre Malachite",
-    brand: "Lattafa",
+    brand: "Maison Alhambra",
     price: 55000,
     image: "/images/mockups/sceptre_malachite_100ml.webp",
     category: "hombre",
@@ -1028,7 +1028,7 @@ export const arabProducts: Product[] = [
   {
     id: 171,
     name: "Tiramisu Caramel",
-    brand: "Lattafa",
+    brand: "Zimaya",
     price: 50000,
     image: "/images/mockups/tiramisú_caramel_100ml.webp",
     category: "mujer",
@@ -1193,7 +1193,7 @@ export const arabProducts: Product[] = [
   {
     id: 182,
     name: "Ghost Spectre",
-    brand: "Fragrance World",
+    brand: "French Avenue",
     price: 50000,
     image: "/images/mockups/ghost_spectre_mockup.webp",
     category: "unisex",
@@ -1238,7 +1238,7 @@ export const arabProducts: Product[] = [
   {
     id: 185,
     name: "No. 2 Men",
-    brand: "Fragrance World",
+    brand: "Maison Alhambra",
     price: 55000,
     image: "/images/mockups/no2_mockup.webp",
     category: "hombre",
@@ -1313,7 +1313,7 @@ export const arabProducts: Product[] = [
   {
     id: 190,
     name: "Viking Kashmir",
-    brand: "Fragrance World",
+    brand: "Bharara",
     price: 50000,
     image: "/images/mockups/viking_kashmir_mockup.webp",
     category: "unisex",
@@ -1463,7 +1463,7 @@ export const arabProducts: Product[] = [
   {
     id: 200,
     name: "Desirable Addiction",
-    brand: "Lattafa",
+    brand: "Maison Alhambra",
     price: 45000,
     image: "/images/mockups/desirable_addiction_mockup.webp",
     category: "unisex",
@@ -1749,7 +1749,7 @@ export const arabProducts: Product[] = [
   {
     id: 219,
     name: "Royal Blend",
-    brand: "Fragrance World",
+    brand: "French Avenue",
     price: 55000,
     image: "/images/mockups/royal_blend_100ml.webp",
     category: "unisex",
@@ -1795,7 +1795,7 @@ export const arabProducts: Product[] = [
   {
     id: 222,
     name: "Amnia",
-    brand: "Lattafa",
+    brand: "Al Wataniah",
     price: 36000,
     image: "/images/mockups/amnia_100ml.webp",
     category: "arabe",
@@ -1915,7 +1915,7 @@ export const arabProducts: Product[] = [
   {
     id: 230,
     name: "Victoria",
-    brand: "Maison Alhambra",
+    brand: "Lattafa",
     price: 32000,
     image: "/images/mockups/victoria_100ml.webp",
     category: "arabe",
