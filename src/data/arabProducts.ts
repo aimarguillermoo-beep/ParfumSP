@@ -1508,7 +1508,7 @@ export const arabProducts: Product[] = [
   {
     id: 203,
     name: "Leuer d'Espoir Serene Grove",
-    brand: "Lattafa",
+    brand: "Paris Córner",
     price: 45000,
     image: "/images/mockups/leuer_despoir_mockup.webp",
     category: "unisex",
