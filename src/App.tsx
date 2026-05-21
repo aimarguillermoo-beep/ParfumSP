@@ -36,7 +36,7 @@ export default function App() {
       {/* Floating Cart Button */}
       <button
         onClick={() => setIsCartOpen(true)}
-        className="fixed bottom-24 right-6 z-[65] w-14 h-14 bg-gold-primary text-black-deep rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(201,169,110,0.4)] hover:bg-gold-light hover:scale-110 transition-all duration-300 group cursor-pointer"
+        className="fixed bottom-24 right-6 z-[65] w-14 h-14 bg-gold-primary text-black-deep rounded-full hidden md:flex items-center justify-center shadow-[0_4px_20px_rgba(201,169,110,0.4)] hover:bg-gold-light hover:scale-110 transition-all duration-300 group cursor-pointer"
         id="floating-cart"
         aria-label="Ver Carrito de compras"
       >

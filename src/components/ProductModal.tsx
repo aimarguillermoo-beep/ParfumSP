@@ -10,7 +10,7 @@ interface ProductModalProps {
 }
 
 export default function ProductModal({ product, onClose }: ProductModalProps) {
-  const { addToCart } = useCart();
+  const { addToCart, setIsCartOpen, totalItems } = useCart();
 
   useEffect(() => {
     if (product) {
@@ -191,6 +191,23 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           </div>
         </div>
       </div>
+
+      {/* Floating Cart Button for Mobile (only when modal is open) */}
+      <button
+        onClick={() => setIsCartOpen(true)}
+        className="fixed bottom-24 right-6 z-[65] w-14 h-14 bg-gold-primary text-black-deep rounded-full flex md:hidden items-center justify-center shadow-[0_4px_20px_rgba(201,169,110,0.4)] hover:bg-gold-light hover:scale-110 transition-all duration-300 group cursor-pointer"
+        id="modal-floating-cart"
+        aria-label="Ver Carrito de compras"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+        {totalItems > 0 && (
+          <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-scaleIn">
+            {totalItems}
+          </span>
+        )}
+      </button>
     </div>
   );
 }
