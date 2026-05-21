@@ -170,7 +170,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             <div className="space-y-3">
               <button
                 onClick={handleAddToCart}
-                className="w-full py-3.5 bg-gradient-to-r from-gold-dark via-gold-primary to-gold-light text-black-deep font-semibold text-sm uppercase tracking-wider rounded-sm hover:shadow-[0_0_25px_rgba(201,169,110,0.3)] transition-all duration-300"
+                className="w-full py-3.5 bg-gradient-to-r from-gold-dark via-gold-primary to-gold-light text-black-deep font-semibold text-sm uppercase tracking-wider rounded-sm hover:shadow-[0_0_25px_rgba(201,169,110,0.3)] transition-all duration-300 cursor-pointer"
                 id="modal-add-to-cart"
               >
                 Agregar al Carrito

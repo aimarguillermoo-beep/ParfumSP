@@ -74,7 +74,7 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
               e.stopPropagation();
               addToCart(product);
             }}
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-gold-primary text-black-deep px-6 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 hover:bg-gold-light"
+            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-gold-primary text-black-deep px-6 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 hover:bg-gold-light cursor-pointer"
             id={`add-to-cart-${product.id}`}
             aria-label={`Agregar ${product.name} al carrito`}
           >

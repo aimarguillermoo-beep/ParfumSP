@@ -1,5 +1,6 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react';
 import type { Product } from '../data/products';
+import ToastNotification from '../components/ToastNotification';
 
 export interface CartItem {
   product: Product;
@@ -23,6 +24,23 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [toast, setToast] = useState<{ id: string; product: Product; isExiting: boolean } | null>(null);
+
+  useEffect(() => {
+    if (!toast) return;
+
+    if (toast.isExiting) {
+      const timer = setTimeout(() => {
+        setToast(null);
+      }, 300); // Coincide con la animación de salida
+      return () => clearTimeout(timer);
+    } else {
+      const timer = setTimeout(() => {
+        setToast(prev => prev ? { ...prev, isExiting: true } : null);
+      }, 2700); // Muestra por 2.7s antes de iniciar animación de salida
+      return () => clearTimeout(timer);
+    }
+  }, [toast]);
 
   const addToCart = useCallback((product: Product) => {
     setItems(prev => {
@@ -35,6 +53,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
         );
       }
       return [...prev, { product, quantity: 1 }];
+    });
+
+    setToast({
+      id: Math.random().toString(36).substring(2, 9),
+      product,
+      isExiting: false
     });
   }, []);
 
@@ -74,6 +98,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
       }}
     >
       {children}
+      <ToastNotification
+        toast={toast}
+        onClose={() => setToast(prev => prev ? { ...prev, isExiting: true } : null)}
+      />
     </CartContext.Provider>
   );
 }
