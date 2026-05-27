@@ -2304,4 +2304,79 @@ export const arabProducts: Product[] = [
       base: ['castaña', 'vainilla', 'maderas ambaradas']
     },
   },
+  {
+    id: 256,
+    name: "Liquid Brun Limited Edition",
+    brand: "French Avenue",
+    price: 95000,
+    image: "/images/mockups/liquid_brun_limited_edition_150ml.webp",
+    category: "hombre",
+    description: "Una versión aún más densa, rica y duradera que la tradicional, destacando una vainilla de Madagascar de alta concentración.",
+    size: "150ml",
+    notes: {
+      top: ["Canela", "Cardamomo"],
+      heart: ["Flor de azahar del naranjo"],
+      base: ["Vainilla de Madagascar", "Notas amaderadas intensas", "Ámbar"]
+    },
+  },
+  {
+    id: 257,
+    name: "Odyssey Spectra",
+    brand: "Armaf",
+    price: 50000,
+    image: "/images/mockups/odyssey_spectra_100ml.webp",
+    category: "hombre",
+    description: "Una propuesta audaz y especiada de la línea Odyssey, donde los cítricos y la menta se fusionan en un fondo amaderado oriental.",
+    size: "100ml",
+    notes: {
+      top: ["Cítricos chispeantes", "Manzana verde", "Menta fresca"],
+      heart: ["Especias picantes"],
+      base: ["Haba tonka", "Madera oriental de ámbar"]
+    },
+  },
+  {
+    id: 258,
+    name: "Scandal Le Parfum",
+    brand: "Jean Paul Gaultier",
+    price: 195000,
+    image: "/images/mockups/scandal_le_parfum_100ml.webp",
+    category: "hombre",
+    description: "Una versión mucho más intensa, oscura y maderosa que el Scandal tradicional.",
+    size: "100ml",
+    notes: {
+      top: ["Geranio"],
+      heart: ["Haba tonka"],
+      base: ["Sándalo"]
+    },
+  },
+  {
+    id: 259,
+    name: "The Only One",
+    brand: "Dolce & Gabbana",
+    price: 120000,
+    image: "/images/mockups/the_only_one_100ml.webp",
+    category: "mujer",
+    description: "Un aroma sumamente sofisticado, empolvado y con un toque adictivo de café dulce.",
+    size: "100ml",
+    notes: {
+      top: ["Violeta", "Bergamota", "Naranja"],
+      heart: ["Café", "Iris", "Pera", "Rosa", "Flor de azahar del naranjo"],
+      base: ["Caramelo", "Vainilla", "Pachulí"]
+    },
+  },
+  {
+    id: 260,
+    name: "Veneno",
+    brand: "French Avenue",
+    price: 85000,
+    image: "/images/mockups/veneno_100ml.webp",
+    category: "unisex",
+    description: "Una fragancia misteriosa y ahumada de la casa French Avenue, con notas frescas de menta y ron que se funden con cedro, tabaco y vainilla.",
+    size: "100ml",
+    notes: {
+      top: ["Menta helada", "Ron", "Notas verdes"],
+      heart: ["Acordes florales abstractos", "Madera de cedro"],
+      base: ["Tabaco", "Vainilla", "Haba tonka"]
+    },
+  },
 ];
