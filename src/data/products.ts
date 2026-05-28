@@ -23,8 +23,9 @@ export interface Product {
 
 export const products: Product[] = [];
 
-// Merge arab products into the main products array
-export const allProducts: Product[] = [...products, ...arabProducts];
+// Merge arab products into the main products array and sort alphabetically by name
+export const allProducts: Product[] = [...products, ...arabProducts].sort((a, b) => a.name.localeCompare(b.name));
+
 
 export const ARAB_BRANDS = [
   "Lattafa", "Armaf", "Al Haramain", "Al Wataniah",
