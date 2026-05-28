@@ -2379,4 +2379,19 @@ export const arabProducts: Product[] = [
       base: ["Tabaco", "Vainilla", "Haba tonka"]
     },
   },
+  {
+    id: 261,
+    name: "Odyssey Mandarin Sky Vintage",
+    brand: "Armaf",
+    price: 90000,
+    image: "/images/mockups/odyssey_mandarin_sky_vintage_100ml.webp",
+    category: "hombre",
+    description: "Es una edición especial o variante de la línea Odyssey Mandarin Sky, que mantiene ese ADN característico, cítrico y dulce, pero con una presentación única. Al igual que el tradicional, equilibra perfectamente la frescura de las frutas cítricas con un fondo denso, cremoso y dulce.",
+    size: "100ml",
+    notes: {
+      top: ["Mandarina", "Naranja", "Azafrán", "Salvia esclarea"],
+      heart: ["Caramelo", "Haba tonka", "Notas florales suaves"],
+      base: ["Ámbar", "Maderas preciosas", "Vetiver"]
+    },
+  },
 ];
