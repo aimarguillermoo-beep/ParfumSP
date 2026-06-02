@@ -2409,5 +2409,20 @@ export const arabProducts: Product[] = [
       base: ["Vainilla de Madagascar", "Ámbar gris", "Pachulí", "Almizcle", "Madera de oud limpia"]
     },
   },
+  {
+    id: 263,
+    name: "Odyssey Homme White Edition",
+    brand: "Armaf",
+    price: 50000,
+    image: "/images/mockups/odyssey_homme_white_edition_100ml.webp",
+    category: "hombre",
+    description: "Es una versión de la línea Odyssey muy elogiada por su frescura, ideal para el uso diario, climas templados o para después de bañarse, ya que tiene un perfil muy limpio y pulcro. Es un aroma marcadamente masculino que equilibra la chispa cítrica y amarga del pomelo (que se llega a apreciar al fondo de la foto) con una base amaderada suave y un aura marina súper pulcra.",
+    size: "100ml",
+    notes: {
+      top: ["Pomelo (toronja)", "Yuzu", "Pimienta rosa", "Hojas de violeta"],
+      heart: ["Notas marinas", "Lavanda", "Menta refrescante"],
+      base: ["Ámbar gris", "Madera de cedro", "Sándalo", "Madera de gaiac"]
+    },
+  },
 ];
 
