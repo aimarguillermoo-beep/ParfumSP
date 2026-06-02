@@ -2394,4 +2394,20 @@ export const arabProducts: Product[] = [
       base: ["Ámbar", "Maderas preciosas", "Vetiver"]
     },
   },
+  {
+    id: 262,
+    name: "Royal Blend Nero",
+    brand: "French Avenue",
+    price: 65000,
+    image: "/images/mockups/royal_blend_nero_100ml.webp",
+    category: "unisex",
+    description: "Es un flanquer o variante de la línea Royal Blend. Mientras que el tradicional va por el lado licoroso y ultra dulce de las barricas de roble, la versión Nero busca un perfil más oscuro, sofisticado y nocturno. Es una fragancia que equilibra muy bien la salida frutal limpia con un cuerpo denso, elegante y de gran fijación, ideal para destacar por la noche.",
+    size: "100ml",
+    notes: {
+      top: ["Manzana verde", "Bergamota de Calabria", "Cilantro", "Toque especiado"],
+      heart: ["Azafrán", "Rosa de Damasco", "Jazmín", "Maderas blancas"],
+      base: ["Vainilla de Madagascar", "Ámbar gris", "Pachulí", "Almizcle", "Madera de oud limpia"]
+    },
+  },
 ];
+
