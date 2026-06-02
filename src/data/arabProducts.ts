@@ -245,7 +245,7 @@ export const arabProducts: Product[] = [
   {
     id: 117,
     name: "Aqua Dubai",
-    brand: "Lattafa",
+    brand: "Al Haramain",
     price: 100000,
     image: "/images/mockups/aqua_dubai_100ml.webp",
     category: "unisex",
