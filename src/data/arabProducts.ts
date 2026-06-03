@@ -2035,7 +2035,7 @@ export const arabProducts: Product[] = [
   },
   {
     id: 238,
-    name: "Hawas Cobra",
+    name: "Hawas Kobra",
     brand: "Rasasi",
     price: 48000,
     image: "/images/mockups/hawas_cobra_100ml.webp",
