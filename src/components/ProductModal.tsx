@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import type { Product } from '../data/products';
 import { useCart } from '../context/CartContext';
 import { businessInfo } from '../data/businessConfig';
@@ -11,10 +11,19 @@ interface ProductModalProps {
 
 export default function ProductModal({ product, onClose }: ProductModalProps) {
   const { addToCart, setIsCartOpen, totalItems } = useCart();
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     if (product) {
+      setImageLoaded(false);
       document.body.style.overflow = 'hidden';
+
+      // Eagerly pre-decode the image so it's ready instantly
+      const img = new Image();
+      img.src = product.image;
+      img.decode()
+        .then(() => setImageLoaded(true))
+        .catch(() => setImageLoaded(true));
     } else {
       document.body.style.overflow = '';
     }
@@ -44,7 +53,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-4" id="product-modal">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black-deep/90 backdrop-blur-sm animate-fadeIn"
+        className="absolute inset-0 bg-black-deep/95 animate-fadeIn"
         onClick={onClose}
       />
 
@@ -64,13 +73,19 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
           {/* Image */}
-          <div className="relative h-72 md:h-auto bg-black-base overflow-hidden">
+          <div className="relative aspect-square md:aspect-auto md:h-auto bg-black-base overflow-hidden md:min-h-[500px]">
+            {/* Shimmer skeleton */}
+            {!imageLoaded && (
+              <div className="absolute inset-0 bg-gradient-to-r from-black-light via-black-lighter to-black-light bg-[length:200%_100%] animate-shimmer" />
+            )}
             <img
               src={product.image}
               alt={`${product.brand} ${product.name}`}
-              className="w-full h-full object-cover"
-              decoding="async"
+              className={`w-full h-full object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+              decoding="sync"
               loading="eager"
+              fetchPriority="high"
+              onLoad={() => setImageLoaded(true)}
             />
             {/* Subtle gradient overlay at bottom */}
             <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black-base/40 to-transparent md:hidden" />

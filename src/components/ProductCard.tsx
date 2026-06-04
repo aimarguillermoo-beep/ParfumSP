@@ -18,6 +18,7 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
   const preloadImage = () => {
     const img = new Image();
     img.src = product.image;
+    img.decode().catch(() => {});
   };
 
   return (
