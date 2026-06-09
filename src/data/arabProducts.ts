@@ -2424,5 +2424,20 @@ export const arabProducts: Product[] = [
       base: ["Ámbar gris", "Madera de cedro", "Sándalo", "Madera de gaiac"]
     },
   },
+  {
+    id: 264,
+    name: "Historic Doria",
+    brand: "Afnan",
+    price: 70000,
+    image: "/images/mockups/historic_dorian_100ml.webp",
+    category: "mujer",
+    description: "Una fragancia femenina de la colección Historic de Afnan, elegante y sofisticada, que abre con una mezcla jugosa de frambuesa y limón, evoluciona hacia un corazón floral de jazmín y nardos, y descansa sobre un fondo cálido y amaderado.",
+    size: "100ml",
+    notes: {
+      top: ["Frambuesa", "Cáscara de limón", "Flor de azahar del naranjo"],
+      heart: ["Tuberosa (nardos)", "Jazmín", "Mandarina", "Ambroxan"],
+      base: ["Vainilla", "Almizcle blanco", "Maderas suaves"]
+    },
+  },
 ];
 
