@@ -2439,5 +2439,50 @@ export const arabProducts: Product[] = [
       base: ["Vainilla", "Almizcle blanco", "Maderas suaves"]
     },
   },
+  {
+    id: 265,
+    name: "Momento",
+    brand: "Riiffs",
+    price: 70000,
+    image: "/images/mockups/momento_riiffs_100ml_masculino.webp",
+    category: "hombre",
+    description: "Un aroma marcadamente masculino, cítrico, especiado y muy limpio, ideal para el uso diario y para quienes buscan una sensación fresca y pulcra de larga duración.",
+    size: "100ml",
+    notes: {
+      top: ["Limón", "Bergamota", "Mandarina", "Notas verdes"],
+      heart: ["Cardamomo", "Jengibre", "Jazmín", "Toques especiados frescos"],
+      base: ["Madera de cedro", "Sándalo", "Ámbar", "Almizcle blanco"]
+    },
+  },
+  {
+    id: 266,
+    name: "Papillon D'or",
+    brand: "Maison Alhambra",
+    price: 70000,
+    image: "/images/mockups/maison_alhambra_100ml_femenino.webp",
+    category: "mujer",
+    description: "Es una fragancia sumamente femenina, elegante y sofisticada, con una presencia floral blanca muy fina y un fondo dulce y cremoso. Ideal para mujeres que buscan distinción y una excelente estela.",
+    size: "100ml",
+    notes: {
+      top: ["Pera", "Bergamota", "Notas frutales jugosas"],
+      heart: ["Jazmín", "Tuberosa (nardos)", "Flor de azahar del naranjo"],
+      base: ["Vainilla", "Pachulí", "Almizcle", "Toque de ámbar"]
+    },
+  },
+  {
+    id: 267,
+    name: "My Stellar",
+    brand: "Ajmal",
+    price: 55000,
+    image: "/images/mockups/my_stellar_ajmal_100ml_femenino.webp",
+    category: "mujer",
+    description: "Una fragancia intensamente femenina, dulce y ambarada. Su color licoroso ya te anticipa un fondo cálido, ideal para salidas o climas más templados y frescos.",
+    size: "100ml",
+    notes: {
+      top: ["Notas frutales dulces", "Mandarina", "Bergamota"],
+      heart: ["Flores blancas (jazmín, flor de azahar del naranjo)", "Acorde gourmand ligero"],
+      base: ["Vainilla cálida", "Ámbar", "Sándalo", "Almizcle"]
+    },
+  },
 ];
 
