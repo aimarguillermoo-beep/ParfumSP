@@ -2220,7 +2220,7 @@ export const arabProducts: Product[] = [
     brand: "Lattafa",
     price: 48000,
     image: "/images/mockups/teriaq_intense__100ml.webp",
-    category: "mujer",
+    category: "unisex",
     description: "Una bomba dulce, densa y súper seductora",
     size: "100ml",
     notes: {
@@ -2482,6 +2482,66 @@ export const arabProducts: Product[] = [
       top: ["Notas frutales dulces", "Mandarina", "Bergamota"],
       heart: ["Flores blancas (jazmín, flor de azahar del naranjo)", "Acorde gourmand ligero"],
       base: ["Vainilla cálida", "Ámbar", "Sándalo", "Almizcle"]
+    },
+  },
+  {
+    id: 268,
+    name: "Club de Nuit Lion Heart",
+    brand: "Armaf",
+    price: 75000,
+    image: "/images/mockups/club_de_nuit_lion_heart_100ml_masculino.webp",
+    category: "hombre",
+    description: "Una variante de la famosa línea Club de Nuit que mantiene ese ADN ahumado y frutal tan característico, ideal para destacar en cualquier ocasión con una proyección impecable.",
+    size: "100ml",
+    notes: {
+      top: ["Piña", "Bergamota", "Grosellas negras", "Manzana"],
+      heart: ["Abedul", "Jazmín", "Rosa", "Pachulí"],
+      base: ["Almizcle", "Ámbar gris", "Musgo de roble", "Vainilla"]
+    },
+  },
+  {
+    id: 269,
+    name: "Hawas Fire",
+    brand: "Rasasi",
+    price: 80000,
+    image: "/images/mockups/hawas_fire_100ml_masculino.webp",
+    category: "hombre",
+    description: "A diferencia del Hawas original acuático, la versión Fire es una propuesta caliente, especiada y resinosa. Ideal para la noche o climas fríos por su fondo denso y seductor.",
+    size: "100ml",
+    notes: {
+      top: ["Bergamota", "Pimienta negra", "Azafrán", "Toques de manzana"],
+      heart: ["Cuero", "Nuez moscada", "Ciruela", "Flor de azahar del naranjo"],
+      base: ["Ámbar", "Madera de sándalo", "Pachulí", "Almizcle"]
+    },
+  },
+  {
+    id: 270,
+    name: "Hawas Verde",
+    brand: "Rasasi",
+    price: 75000,
+    image: "/images/mockups/hawas_verde_100ml_masculino.webp",
+    category: "hombre",
+    description: "Un flanquer ultra vibrante, limpio y muy aromático. Va para el lado de los aromas verdes e hiper frescos, perfecto para usar de día o después de entrenar en el gimnasio.",
+    size: "100ml",
+    notes: {
+      top: ["Manzana verde", "Bergamota", "Menta refrescante", "Pomelo"],
+      heart: ["Notas herbales", "Lavanda", "Cardamomo", "Melón"],
+      base: ["Vetiver", "Sándalo", "Cedro", "Almizcle limpio"]
+    },
+  },
+  {
+    id: 271,
+    name: "Royal Blend Sequoia",
+    brand: "French Avenue",
+    price: 75000,
+    image: "/images/mockups/royal_blend_sequoia_100ml_unisex.webp",
+    category: "unisex",
+    description: "Siguiendo la línea sofisticada de los Royal Blend, la versión Sequoia cruza el dulzor gourmand y licoroso con una madera majestuosa, seca y resinosa. Un aroma imponente y súper elegante.",
+    size: "100ml",
+    notes: {
+      top: ["Canela", "Jengibre", "Cardamomo", "Toques de bergamota"],
+      heart: ["Madera de secuoya", "Notas de ron/coñac", "Praliné"],
+      base: ["Vainilla de Madagascar", "Sándalo", "Haba tonka", "Maderas ambaradas"]
     },
   },
 ];
