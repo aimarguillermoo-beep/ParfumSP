@@ -2544,5 +2544,20 @@ export const arabProducts: Product[] = [
       base: ["Vainilla de Madagascar", "Sándalo", "Haba tonka", "Maderas ambaradas"]
     },
   },
+  {
+    id: 272,
+    name: "Club de Nuit Intense Man",
+    brand: "Armaf",
+    price: 65000,
+    image: "/images/mockups/club_de_nuit_intense_man.webp",
+    category: "hombre",
+    description: "Es uno de los perfumes más vendidos y famosos del mundo dentro de la perfumería alternativa, ultra conocido por ser la mejor interpretación inspirada en Creed Aventus. Destaca por tener una proyección tremenda y una duración bestial en piel, con un perfil marcadamente masculino, potente, elegante y súper versátil.",
+    size: "105ml",
+    notes: {
+      top: ["Limón", "Piña", "Bergamota", "Grosellas negras", "Manzana"],
+      heart: ["Abedul (toque ahumado)", "Jazmín", "Rosa"],
+      base: ["Almizcle", "Ámbar gris", "Pachulí", "Vainilla"]
+    },
+  },
 ];
 
