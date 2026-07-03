@@ -2724,4 +2724,50 @@ export const arabProducts: Product[] = [
       base: ["Almizcle", "Musgo de roble", "Ámbar gris"]
     },
   },
+  {
+    id: 284,
+    name: "Jorge Di Profumo",
+    brand: "Maison Alhambra",
+    price: 45000,
+    image: "/images/mockups/jorge_di_profumo_100ml.webp",
+    category: "hombre",
+    description: "Una alternativa impecable al descatalogado e icónico Acqua di Giò Profumo. Un aroma marcadamente masculino, fresco, acuático y muy elegante, con un toque ahumado de incienso que le da una vibra misteriosa y madura.",
+    size: "100ml",
+    notes: {
+      top: ["Notas marinas", "Bergamota", "Mandarina"],
+      heart: ["Romero", "Salvia", "Geranio"],
+      base: ["Incienso", "Pachulí"]
+    },
+  },
+  {
+    id: 285,
+    name: "North Stag Expressions Deux II",
+    brand: "Paris Corner",
+    price: 65000,
+    image: "/images/mockups/north_stag_deux_100ml.webp",
+    category: "hombre",
+    description: "Inspirado fuertemente en Layton de Parfums de Marly. Es un perfume nicho alternativo de altísima calidad que destaca por su salida de manzana crujiente combinada con una vainilla especiada y cremosa. Una bomba para climas fríos, citas o salidas nocturnas.",
+    size: "100ml",
+    notes: {
+      top: ["Manzana", "Lavanda", "Bergamota", "Mandarina"],
+      heart: ["Geranio", "Violeta", "Jazmín"],
+      base: ["Vainilla", "Cardamomo", "Sándalo", "Pimienta negra", "Madera de gaiac", "Pachulí"]
+    },
+  },
+  {
+    id: 286,
+    name: "Supremacy Collector's Edition",
+    brand: "Afnan",
+    price: 65000,
+    image: "/images/mockups/supremacy_collector_100ml.webp",
+    category: "hombre",
+    description: "Una pieza de colección dentro de la prestigiosa línea Supremacy de Afnan (la botella texturizada tipo piedra destaca un montón en cualquier repisa). Mantiene el exitoso ADN frutal, limpio y sutilmente ahumado, pero con una evolución más densa, rica y redonda. Es hiper versátil y un imán de cumplidos.",
+    size: "100ml",
+    notes: {
+      top: ["Piña", "Manzana", "Bergamota", "Grosellas negras"],
+      heart: ["Abedul", "Jazmín", "Rosa"],
+      base: ["Ámbar gris", "Almizcle", "Musgo de roble", "Pachulí", "Un toque de vainilla"]
+    },
+  },
 ];
+
