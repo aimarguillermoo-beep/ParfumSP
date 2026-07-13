@@ -2771,17 +2771,17 @@ export const arabProducts: Product[] = [
   },
   {
     id: 287,
-    name: "Adine",
-    brand: "Pendora Scents",
+    name: "Nadine",
+    brand: "Paris Corner",
     price: 45000,
-    image: "/images/mockups/adine_mockup.webp",
+    image: "/images/mockups/nadine_mockup.webp",
     category: "mujer",
-    description: "Inspirado en el icónico Alien de Thierry Mugler. Una fragancia oriental floral para mujer que abre con un radiante jazmín sambac, evoluciona hacia un corazón aterciopelado de madera de cachemira y se asienta en un fondo cremoso y sensual de ámbar blanco.",
+    description: "Una refinada alternativa inspirada en Delina de Parfums de Marly. Presenta una salida frutal jugosa y ácida por el lichi y el ruibarbo, que evoluciona hacia un cuerpo floral de rosas y peonías muy fino, cremoso y ultra femenino. Tiene un rendimiento excelente en piel.",
     size: "100ml",
     notes: {
-      top: ["Jazmín sambac"],
-      heart: ["Madera de cachemira"],
-      base: ["Ámbar blanco"]
+      top: ["Lichi", "Ruibarbo", "Bergamota", "Nuez moscada"],
+      heart: ["Rosa turca", "Peonía", "Almizcle", "Petalia"],
+      base: ["Cachemira", "Cedro", "Incienso", "Vainilla"]
     },
   },
   {
@@ -2791,27 +2791,27 @@ export const arabProducts: Product[] = [
     price: 85000,
     image: "/images/mockups/supremacy_not_only_intense_mockup.webp",
     category: "hombre",
-    description: "Una de las joyas de Afnan, inspirada en el exitoso ADN de Creed Aventus pero con un giro más denso, afrutado y especiado similar a Nishane Hacivat. Una fragancia extremadamente duradera, fresca, masculina y elegante que se adapta a cualquier situación.",
+    description: "Una versión mucho más densa, afrutada y extractada que el ADN tradicional estilo Aventus o Hacivat. Destaca por una nota muy potente de grosellas negras maduras mezclada con un fondo musgoso y ahumado espectacular. Tiene una duración y proyección bestiales, ideal para quienes buscan hacerse notar.",
     size: "100ml",
     notes: {
-      top: ["Bergamota", "Manzana", "Grosella negra"],
-      heart: ["Lavanda", "Pachulí", "Musgo de roble"],
-      base: ["Azafrán", "Almizcle", "Ámbar gris"]
+      top: ["Grosellas negras", "Bergamota", "Manzana fresca"],
+      heart: ["Musgo de roble", "Pachulí", "Lavanda"],
+      base: ["Ámbar gris", "Azafrán", "Almizcle"]
     },
   },
   {
     id: 289,
-    name: "Tag Uomo Rosso",
+    name: "Tag-Uomo Rosso",
     brand: "Armaf",
     price: 55000,
     image: "/images/mockups/tag_uomo_rosso_mockup.webp",
     category: "hombre",
-    description: "Lanzado en 2024, esta fragancia ámbar amaderada para hombres destaca por una salida especiada y aromática con cardamomo y lavanda, un corazón picante de pimienta negra y un fondo cálido, dulce y ahumado de vainilla, haba tonka e incienso.",
+    description: "Inspirado en la vibra especiada, dulce y nocturna de fragancias como Spicebomb. Es un aroma marcadamente masculino, cálido y seductor, donde se equilibra el picante de la pimienta y el cardamomo con un fondo cremoso de vainilla. Va excelente para salidas de noche o climas fríos.",
     size: "100ml",
     notes: {
-      top: ["Lavanda", "Cardamomo", "Notas aromáticas"],
-      heart: ["Pimienta negra", "Notas especiadas"],
-      base: ["Vainilla", "Haba tonka", "Incienso", "Pachulí"]
+      top: ["Pimienta rosa", "Cardamomo", "Bergamota", "Mandarina"],
+      heart: ["Notas aromáticas", "Lavanda", "Nuez moscada"],
+      base: ["Haba tonka", "Vainilla", "Sándalo", "Cedro"]
     },
   },
 ];
