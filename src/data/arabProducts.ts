@@ -1634,7 +1634,7 @@ export const arabProducts: Product[] = [
     image: "/images/mockups/precieux.webp",
     category: "hombre",
     description: "Un extracto de perfume de alta gama, potente y lujoso, con una estela inconfundible de cuero y ámbar.",
-    size: "105ml",
+    size: "55ml",
     notes: {
       top: ["Notas cítricas"],
       heart: ["Especias picantes"],
@@ -2767,6 +2767,51 @@ export const arabProducts: Product[] = [
       top: ["Piña", "Manzana", "Bergamota", "Grosellas negras"],
       heart: ["Abedul", "Jazmín", "Rosa"],
       base: ["Ámbar gris", "Almizcle", "Musgo de roble", "Pachulí", "Un toque de vainilla"]
+    },
+  },
+  {
+    id: 287,
+    name: "Adine",
+    brand: "Pendora Scents",
+    price: 45000,
+    image: "/images/mockups/adine_mockup.webp",
+    category: "mujer",
+    description: "Inspirado en el icónico Alien de Thierry Mugler. Una fragancia oriental floral para mujer que abre con un radiante jazmín sambac, evoluciona hacia un corazón aterciopelado de madera de cachemira y se asienta en un fondo cremoso y sensual de ámbar blanco.",
+    size: "100ml",
+    notes: {
+      top: ["Jazmín sambac"],
+      heart: ["Madera de cachemira"],
+      base: ["Ámbar blanco"]
+    },
+  },
+  {
+    id: 288,
+    name: "Supremacy Not Only Intense",
+    brand: "Afnan",
+    price: 85000,
+    image: "/images/mockups/supremacy_not_only_intense_mockup.webp",
+    category: "hombre",
+    description: "Una de las joyas de Afnan, inspirada en el exitoso ADN de Creed Aventus pero con un giro más denso, afrutado y especiado similar a Nishane Hacivat. Una fragancia extremadamente duradera, fresca, masculina y elegante que se adapta a cualquier situación.",
+    size: "100ml",
+    notes: {
+      top: ["Bergamota", "Manzana", "Grosella negra"],
+      heart: ["Lavanda", "Pachulí", "Musgo de roble"],
+      base: ["Azafrán", "Almizcle", "Ámbar gris"]
+    },
+  },
+  {
+    id: 289,
+    name: "Tag Uomo Rosso",
+    brand: "Armaf",
+    price: 55000,
+    image: "/images/mockups/tag_uomo_rosso_mockup.webp",
+    category: "hombre",
+    description: "Lanzado en 2024, esta fragancia ámbar amaderada para hombres destaca por una salida especiada y aromática con cardamomo y lavanda, un corazón picante de pimienta negra y un fondo cálido, dulce y ahumado de vainilla, haba tonka e incienso.",
+    size: "100ml",
+    notes: {
+      top: ["Lavanda", "Cardamomo", "Notas aromáticas"],
+      heart: ["Pimienta negra", "Notas especiadas"],
+      base: ["Vainilla", "Haba tonka", "Incienso", "Pachulí"]
     },
   },
 ];
