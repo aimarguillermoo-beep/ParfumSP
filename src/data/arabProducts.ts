@@ -2771,10 +2771,10 @@ export const arabProducts: Product[] = [
   },
   {
     id: 287,
-    name: "Nadine",
+    name: "Adine",
     brand: "Paris Corner",
     price: 45000,
-    image: "/images/mockups/nadine_mockup.webp",
+    image: "/images/mockups/adine_mockup.webp",
     category: "mujer",
     description: "Una refinada alternativa inspirada en Delina de Parfums de Marly. Presenta una salida frutal jugosa y ácida por el lichi y el ruibarbo, que evoluciona hacia un cuerpo floral de rosas y peonías muy fino, cremoso y ultra femenino. Tiene un rendimiento excelente en piel.",
     size: "100ml",
@@ -2812,6 +2812,141 @@ export const arabProducts: Product[] = [
       top: ["Pimienta rosa", "Cardamomo", "Bergamota", "Mandarina"],
       heart: ["Notas aromáticas", "Lavanda", "Nuez moscada"],
       base: ["Haba tonka", "Vainilla", "Sándalo", "Cedro"]
+    },
+  },
+  {
+    id: 290,
+    name: "Arabians Tonka",
+    brand: "Montale",
+    price: 220000,
+    image: "/images/mockups/arabians_tonka_mockup.webp",
+    category: "hombre",
+    description: "Una bestia total para la noche y el frío. Cruza un fondo dulce y azucarado con un Oud súper imponente y limpio.",
+    size: "100ml",
+    notes: {
+      top: ["Bergamota", "Azafrán"],
+      heart: ["Rosa de Bulgaria", "Madera de agar (Oud)"],
+      base: ["Ámbar", "Musgo de roble", "Haba tonka", "Caña de azúcar", "Almizcle blanco"]
+    },
+  },
+  {
+    id: 291,
+    name: "Asad Zanzibar Limited Edition",
+    brand: "Lattafa",
+    price: 50000,
+    image: "/images/mockups/asad_zanzibar_limited_edition_mockup.webp",
+    category: "hombre",
+    description: "Una propuesta súper llamativa y playera, con un toque salado y cremoso de coco ideal para salir de lo común.",
+    size: "100ml",
+    notes: {
+      top: ["Pimienta negra", "Lavanda"],
+      heart: ["Agua de coco", "Sal", "Iris"],
+      base: ["Vainilla", "Incienso"]
+    },
+  },
+  {
+    id: 292,
+    name: "Club de Nuit Precieux IV",
+    brand: "Armaf",
+    price: 85000,
+    image: "/images/mockups/club_de_nuit_precieux_iv_mockup.webp",
+    category: "mujer",
+    description: "Una alternativa floral-frutal cremosa y elegante con una fijación excelente.",
+    size: "55ml",
+    notes: {
+      top: ["Limón", "Pera", "Notas frutales jugosas", "Un toque cítrico"],
+      heart: ["Jazmín", "Notas florales suaves", "Especias finas"],
+      base: ["Vainilla de Madagascar", "Almizcle", "Resinas", "Ámbar"]
+    },
+  },
+  {
+    id: 293,
+    name: "Eternal Touch",
+    brand: "Maison Alhambra",
+    price: 40000,
+    image: "/images/mockups/eternal_touch_mockup.webp",
+    category: "hombre",
+    description: "Un aroma fresco, sumamente limpio y marcadamente masculino.",
+    size: "100ml",
+    notes: {
+      top: ["Toronja (pomelo)", "Notas marinas", "Mandarina"],
+      heart: ["Hoja de laurel", "Jazmín"],
+      base: ["Madera de gaiac", "Musgo de roble", "Pachulí", "Ámbar gris"]
+    },
+  },
+  {
+    id: 294,
+    name: "Habik Femenino",
+    brand: "Lattafa",
+    price: 45000,
+    image: "/images/mockups/habik_mockup.webp",
+    category: "mujer",
+    description: "Muy coqueto, dulce y juvenil, ideal para el uso diario o salidas de tarde.",
+    size: "100ml",
+    notes: {
+      top: ["Frutos rojos dulces", "Mandarina", "Notas florales ligeras"],
+      heart: ["Rosa", "Jazmín", "Toques de caramelo"],
+      base: ["Vainilla suave", "Almizcle blanco", "Ámbar"]
+    },
+  },
+  {
+    id: 295,
+    name: "Hawas Black",
+    brand: "Rasasi",
+    price: 65000,
+    image: "/images/mockups/hawas_black_mockup.webp",
+    category: "hombre",
+    description: "Un flanquer oscuro y elegante de la línea Hawas, con un perfil afrutado más denso y maduro.",
+    size: "100ml",
+    notes: {
+      top: ["Cítricos radiantes", "Bergamota", "Manzana", "Un toque de piña"],
+      heart: ["Jazmín", "Azahar", "Toques de pimienta"],
+      base: ["Ámbar", "Madera de cedro", "Pachulí", "Musgo"]
+    },
+  },
+  {
+    id: 296,
+    name: "Maahir Legacy",
+    brand: "Lattafa",
+    price: 50000,
+    image: "/images/mockups/maahir_legacy_mockup.webp",
+    category: "hombre",
+    description: "Ultra refrescante y pulcro. Huele a menta helada con cítricos finos, ideal para el día a día.",
+    size: "100ml",
+    notes: {
+      top: ["Menta", "Toronja (pomelo)", "Lavanda", "Calone", "Piña"],
+      heart: ["Incienso", "Geranio", "Pimienta negra"],
+      base: ["Vetiver", "Cachemira", "Ambroxan", "Cedro", "Roble"]
+    },
+  },
+  {
+    id: 297,
+    name: "Odyssey Candee",
+    brand: "Armaf",
+    price: 55000,
+    image: "/images/mockups/odyssey_candee_mockup.webp",
+    category: "mujer",
+    description: "Puramente gourmand. Huele literal a golosina y vainilla cremosa, ideal si te buscan perfumes ultra dulces y adictivos.",
+    size: "100ml",
+    notes: {
+      top: ["Azúcar glas", "Frutos rojos", "Fresa dulce"],
+      heart: ["Malvavisco (marshmallow)", "Crema batida", "Notas florales suaves"],
+      base: ["Vainilla", "Haba tonka", "Almizcle"]
+    },
+  },
+  {
+    id: 298,
+    name: "Salvo Elixir",
+    brand: "Maison Alhambra",
+    price: 40000,
+    image: "/images/mockups/salvo_elixir_mockup.webp",
+    category: "hombre",
+    description: "Inspirado en Sauvage Elixir. Especiado, licoroso, súper denso y con una presencia tremenda.",
+    size: "60ml",
+    notes: {
+      top: ["Canela", "Cardamomo", "Nuez moscada", "Toronja (pomelo)"],
+      heart: ["Lavanda"],
+      base: ["Regaliz", "Sándalo", "Ámbar", "Pachulí", "Vetiver"]
     },
   },
 ];
