@@ -31,5 +31,5 @@ export const ARAB_BRANDS = [
   "Lattafa", "Armaf", "Al Haramain", "Al Wataniah",
   "Maison Alhambra", "Asdaff", "Ard al Zaafaran", "French Avenue",
   "Afnan", "Rasasi", "Paris Corner", "Rayhaan",
-  "Orientica", "Bharara", "Zimaya"
+  "Orientica", "Bharara", "Zimaya", "By Stallion 53"
 ];
