@@ -1,6 +1,6 @@
 import type { Product } from '../data/products';
 import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/formatters';
+import { formatPrice, formatPriceNumber } from '../utils/formatters';
 
 interface ProductCardProps {
   product: Product;
@@ -97,11 +97,13 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
         </p>
         <div className="flex flex-wrap items-center gap-1 sm:gap-2">
           <span className="text-gold-primary font-semibold text-sm sm:text-lg">
-            {formatPrice(product.price)}
+            <span className="font-body text-[0.9em] mr-0.5">$</span>
+            {formatPriceNumber(product.price)}
           </span>
           {product.originalPrice && (
             <span className="text-cream/30 text-[10px] sm:text-sm line-through">
-              {formatPrice(product.originalPrice)}
+              <span className="font-body text-[0.9em] mr-0.5">$</span>
+              {formatPriceNumber(product.originalPrice)}
             </span>
           )}
         </div>

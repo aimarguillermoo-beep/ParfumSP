@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Product } from '../data/products';
 import { useCart } from '../context/CartContext';
 import { businessInfo } from '../data/businessConfig';
-import { formatPrice, getWhatsAppUrl } from '../utils/formatters';
+import { formatPrice, formatPriceNumber, getWhatsAppUrl } from '../utils/formatters';
 
 interface ProductModalProps {
   product: Product | null;
@@ -123,11 +123,13 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               {/* Price */}
               <div className="flex items-baseline gap-3 mb-6">
                 <span className="text-gold-primary text-3xl font-bold font-heading">
-                  {formatPrice(product.price)}
+                  <span className="font-body text-[0.9em] mr-1">$</span>
+                  {formatPriceNumber(product.price)}
                 </span>
                 {product.originalPrice && (
                   <span className="text-cream/30 text-lg line-through">
-                    {formatPrice(product.originalPrice)}
+                    <span className="font-body text-[0.9em] mr-1">$</span>
+                    {formatPriceNumber(product.originalPrice)}
                   </span>
                 )}
               </div>

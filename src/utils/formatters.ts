@@ -12,6 +12,17 @@ export const formatPrice = (price: number): string => {
 };
 
 /**
+ * Formats a number as a decimal string without the currency symbol.
+ * Useful for styling the currency symbol separately in the UI.
+ */
+export const formatPriceNumber = (price: number): string => {
+  return new Intl.NumberFormat(businessInfo.currency.locale, {
+    style: 'decimal',
+    minimumFractionDigits: 0,
+  }).format(price);
+};
+
+/**
  * Generates a WhatsApp URL with a pre-filled message.
  */
 export const getWhatsAppUrl = (message: string): string => {

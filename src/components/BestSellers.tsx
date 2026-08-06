@@ -2,7 +2,7 @@ import { useState } from 'react';
 import type { Product } from '../data/products';
 import { useProductOverrides } from '../context/ProductOverridesContext';
 import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/formatters';
+import { formatPrice, formatPriceNumber } from '../utils/formatters';
 import ProductModal from './ProductModal';
 
 export default function BestSellers() {
@@ -88,11 +88,13 @@ export default function BestSellers() {
                   <div className="flex items-center justify-between">
                     <div className="flex items-baseline gap-2">
                       <span className="text-gold-primary font-bold text-2xl font-heading">
-                        {formatPrice(product.price)}
+                        <span className="font-body text-[0.9em] mr-1">$</span>
+                        {formatPriceNumber(product.price)}
                       </span>
                       {product.originalPrice && (
                         <span className="text-cream/30 text-sm line-through">
-                          {formatPrice(product.originalPrice)}
+                          <span className="font-body text-[0.9em] mr-1">$</span>
+                          {formatPriceNumber(product.originalPrice)}
                         </span>
                       )}
                     </div>
