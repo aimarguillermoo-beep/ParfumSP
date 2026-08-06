@@ -88,12 +88,12 @@ export default function BestSellers() {
                   <div className="flex items-center justify-between">
                     <div className="flex items-baseline gap-2">
                       <span className="text-gold-primary font-bold text-2xl font-heading">
-                        <span className="font-body text-[0.9em] mr-1">$</span>
+                        <span className="font-elegant text-[0.9em] mr-1">$</span>
                         {formatPriceNumber(product.price)}
                       </span>
                       {product.originalPrice && (
                         <span className="text-cream/30 text-sm line-through">
-                          <span className="font-body text-[0.9em] mr-1">$</span>
+                          <span className="font-elegant text-[0.9em] mr-1">$</span>
                           {formatPriceNumber(product.originalPrice)}
                         </span>
                       )}
