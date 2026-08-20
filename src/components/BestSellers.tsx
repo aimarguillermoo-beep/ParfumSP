@@ -2,7 +2,7 @@ import { useState } from 'react';
 import type { Product } from '../data/products';
 import { useProductOverrides } from '../context/ProductOverridesContext';
 import { useCart } from '../context/CartContext';
-import { formatPrice, formatPriceNumber } from '../utils/formatters';
+import { formatPriceNumber } from '../utils/formatters';
 import ProductModal from './ProductModal';
 
 export default function BestSellers() {

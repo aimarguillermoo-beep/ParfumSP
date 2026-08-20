@@ -3189,4 +3189,64 @@ export const arabProducts: Product[] = [
       base: ["Almizcle","caoba","ámbar"]
     }
   },
+  {
+    id: 315,
+    name: "Daring Blue For Life",
+    brand: "Maison Alhambra",
+    price: 40000,
+    image: "/images/arabes/daring-blue-for-life-maison-alhambra-masculino-100ml.webp",
+    category: "hombre",
+    description: "Inspirado en Light Blue Forever/Italian Love de Dolce & Gabbana. Destaca por una salida hiper realista y amarga de pomelo fresco, ideal para climas cálidos y uso diario de verano.",
+    size: "100ml",
+    notes: {
+      top: ["Pomelo (toronja)", "Bergamota italiana", "Mandarina", "Notas marinas"],
+      heart: ["Romero", "Salvia", "Pimienta rosa", "Violeta"],
+      base: ["Almizcle", "Notas amaderadas", "Pachulí", "Ámbar gris"]
+    }
+  },
+  {
+    id: 316,
+    name: "Liberté",
+    brand: "Pendora Scents",
+    price: 50000,
+    image: "/images/arabes/liberte-pendora-femenino-100ml.webp",
+    category: "mujer",
+    description: "Inspirado en Libre de Yves Saint Laurent. Combina una lavanda limpia y elegante con flor de azahar brillante sobre una base cremosa de vainilla.",
+    size: "100ml",
+    notes: {
+      top: ["Lavanda", "Mandarina", "Grosellas negras", "Petitgrain"],
+      heart: ["Flor de azahar del naranjo", "Jazmín", "Lavanda francesa"],
+      base: ["Vainilla de Madagascar", "Cedro", "Ámbar gris", "Almizcle"]
+    }
+  },
+  {
+    id: 317,
+    name: "Rose De Nuit",
+    brand: "Pendora Scents",
+    price: 50000,
+    image: "/images/arabes/rose-de-nuit-pendora-femenino-100ml.webp",
+    category: "mujer",
+    description: "Inspirado en Trésor Midnight Rose de Lancôme. Un aroma frutal-floral nocturno, dulce, sensual y con fuerte presencia de frutos rojos jugosos.",
+    size: "100ml",
+    notes: {
+      top: ["Frambuesa", "Grosella negra", "Pimienta rosa"],
+      heart: ["Rosa de Damasco", "Peonía", "Jazmín"],
+      base: ["Vainilla dulce", "Madera de cedro", "Almizcle blanco", "Pachulí"]
+    }
+  },
+  {
+    id: 318,
+    name: "Very Irrésistible",
+    brand: "Givenchy",
+    price: 160000,
+    image: "/images/arabes/very-irresistible-EDT-givenchy-femenino.webp",
+    category: "mujer",
+    description: "Clásico atemporal de diseñador. Un bouquet floral dominado por cinco variedades de rosas con el toque aromático y especiado característico del anís.",
+    size: "75ml",
+    notes: {
+      top: ["Casia", "Cedrón (hierba luisa)", "Anís estrellado"],
+      heart: ["Rosa de mayo", "Rosa centifolia", "Rosa pasión", "Peonía"],
+      base: ["Rosa de Taif", "Pachulí", "Vainilla sutil"]
+    }
+  },
 ];

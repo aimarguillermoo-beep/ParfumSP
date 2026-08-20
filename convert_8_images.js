@@ -3,34 +3,36 @@ import fs from 'fs';
 import path from 'path';
 
 const images = [
-    [String.raw`C:\Users\guill\.gemini\antigravity\brain\a267e1e2-56a5-478c-b38c-95863b106f01\aquilo_lights_bg_1785836931145.jpg`, "aquilo-pour-homme-maison-alhambra-masculino-100ml.webp"],
-    [String.raw`C:\Users\guill\.gemini\antigravity\brain\a267e1e2-56a5-478c-b38c-95863b106f01\cheekmate_king_bg_1785836985011.jpg`, "cheekmate-king-armaf-masculino-100ml.webp"],
-    [String.raw`C:\Users\guill\.gemini\antigravity\brain\a267e1e2-56a5-478c-b38c-95863b106f01\cheekmate_queen_bg_1785836999267.jpg`, "cheekmate-queen-armaf-100ml-femenino.webp"],
-    [String.raw`C:\Users\guill\.gemini\antigravity\brain\a267e1e2-56a5-478c-b38c-95863b106f01\emotion_bg_1785837012346.jpg`, "emotion-le-chameau-femenino-100ml.webp"],
-    [String.raw`C:\Users\guill\.gemini\antigravity\brain\a267e1e2-56a5-478c-b38c-95863b106f01\exquisite_bg_1785837025331.jpg`, "exquisite-pour-homme-club-maison-alhambra-masculino-100ml.webp"],
-    [String.raw`C:\Users\guill\.gemini\antigravity\brain\a267e1e2-56a5-478c-b38c-95863b106f01\khair_confection_bg_1785837037025.jpg`, "khair-confection-paris-corner-femenino-100ml.webp"],
-    [String.raw`C:\Users\guill\.gemini\antigravity\brain\a267e1e2-56a5-478c-b38c-95863b106f01\phantom_my_hero_bg_1785837060069.jpg`, "phantom-my-hero-amper-masculino-100ml.webp"],
-    [String.raw`C:\Users\guill\.gemini\antigravity\brain\a267e1e2-56a5-478c-b38c-95863b106f01\pure_crystal_bg_1785837078453.jpg`, "pure-crystal-lattafa-unisex-100ml.webp"]
+    [String.raw`C:\Users\guill\.gemini\antigravity\brain\03323cce-449c-4fe5-bb96-f46dc2d9b59a\daring_blue_bokeh_1787266081201.jpg`, "daring-blue-for-life-maison-alhambra-masculino-100ml"],
+    [String.raw`C:\Users\guill\.gemini\antigravity\brain\03323cce-449c-4fe5-bb96-f46dc2d9b59a\liberte_bokeh_1787266155841.jpg`, "liberte-pendora-femenino-100ml"],
+    [String.raw`C:\Users\guill\.gemini\antigravity\brain\03323cce-449c-4fe5-bb96-f46dc2d9b59a\rose_de_nuit_bokeh_1787266181577.jpg`, "rose-de-nuit-pendora-femenino-100ml"],
+    [String.raw`C:\Users\guill\.gemini\antigravity\brain\03323cce-449c-4fe5-bb96-f46dc2d9b59a\very_irresistible_bokeh_1787266211498.jpg`, "very-irresistible-EDT-givenchy-femenino"]
 ];
 
-const outputDir = String.raw`C:\Users\guill\OneDrive\Desktop\Parfum_SP\public\images\arabes`;
-
-if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-}
+const destDirs = [
+    String.raw`C:\Users\guill\OneDrive\Desktop\productos_crudos`,
+    String.raw`C:\Users\guill\OneDrive\Desktop\Parfum_SP\public\images\arabes`
+];
 
 async function convertImages() {
-    for (const [src, destName] of images) {
+    for (const dir of destDirs) {
+        if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    }
+
+    for (const [src, baseName] of images) {
         if (fs.existsSync(src)) {
-            const destPath = path.join(outputDir, destName);
-            await sharp(src)
-                .webp({ quality: 90 })
-                .toFile(destPath);
-            console.log(`Saved ${destPath}`);
+            for (const dir of destDirs) {
+                const outWebp = path.join(dir, `${baseName}.webp`);
+                const outJpg = path.join(dir, `${baseName}.jpg`);
+                await sharp(src).webp({ quality: 90 }).toFile(outWebp);
+                await sharp(src).jpeg({ quality: 95 }).toFile(outJpg);
+                console.log(`Saved ${outWebp}`);
+            }
         } else {
             console.error(`Error: ${src} not found!`);
         }
     }
+    console.log('Conversion completed successfully!');
 }
 
 convertImages().catch(console.error);
