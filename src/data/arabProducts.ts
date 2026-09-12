@@ -3249,4 +3249,100 @@ export const arabProducts: Product[] = [
       base: ["Rosa de Taif", "Pachulí", "Vainilla sutil"]
     }
   },
+  {
+    id: 319,
+    name: "Atlas Canyon",
+    brand: "Lattafa",
+    price: 80000,
+    image: "/images/arabes/atlas-canyon-lattafa-unisex-55ml.webp",
+    category: "unisex",
+    description: "Fragancia unisex ambarada y amaderada con notas especiadas cálidas. Un aroma sofisticado y envolvente con una apertura cítrica brillante y fondo resinoso.",
+    size: "55ml",
+    isNew: true,
+    notes: {
+      top: ["Bergamota","Cardamomo","Pimienta rosa"],
+      heart: ["Incienso","Canela","Maderas nobles"],
+      base: ["Ámbar cálido","Vainilla","Haba tonka","Sándalo"]
+    }
+  },
+  {
+    id: 320,
+    name: "Atlas Glacial Valley",
+    brand: "Lattafa",
+    price: 80000,
+    image: "/images/arabes/atlas-glacial-valley-lattafa-unisex-55ml.webp",
+    category: "unisex",
+    description: "Frescura glaciar en estado puro. Una fragancia fresca, aromática y marina que evoca la pureza de los valles helados y el aire de montaña.",
+    size: "55ml",
+    isNew: true,
+    notes: {
+      top: ["Menta fresca","Bergamota","Acordes acuáticos"],
+      heart: ["Lavanda","Salvia","Notas ozónicas"],
+      base: ["Cedro","Almizcle blanco","Ámbar gris"]
+    }
+  },
+  {
+    id: 321,
+    name: "Hawas Diva",
+    brand: "Rasasi",
+    price: 80000,
+    image: "/images/arabes/hawas-diva-rasasi-femenino-100ml.webp",
+    category: "mujer",
+    description: "La versión más seductora y glamorosa de la legendaria línea Hawas para mujer. Un bouquet floral-frutal intenso con toques gourmand y base avainillada.",
+    size: "100ml",
+    isNew: true,
+    notes: {
+      top: ["Ciruela jugosa","Grosellas negras","Mandarina"],
+      heart: ["Jazmín sambac","Flor de azahar","Praliné"],
+      base: ["Vainilla de Madagascar","Ámbar","Pachulí","Almizcle"]
+    }
+  },
+  {
+    id: 322,
+    name: "Marshmallow Blush",
+    brand: "Paris Corner",
+    price: 65000,
+    image: "/images/arabes/marshmallow-blush-paris-corner-100ml-femenino.webp",
+    category: "mujer",
+    description: "Una auténtica delicia gourmand dulce y cremosa. Combina notas esponjosas de malvavisco rosa con fresas y crema batida.",
+    size: "100ml",
+    isNew: true,
+    notes: {
+      top: ["Malvavisco (marshmallow)","Fresa silvestre","Crema batida"],
+      heart: ["Flor de algodón","Jazmín dulce","Azúcar glass"],
+      base: ["Vainilla cremosa","Almizcle blanco","Sándalo suave"]
+    }
+  },
+  {
+    id: 323,
+    name: "Musamam White Intense",
+    brand: "Lattafa",
+    price: 80000,
+    image: "/images/arabes/musamam-white-intense-lattafa-femenino-100ml.webp",
+    category: "mujer",
+    description: "Exquisita creación en su icónica botella con serpiente dorada. Una mezcla luminosa de coco cremoso, cítricos brillantes, sándalo y ambroxan sofisticado.",
+    size: "100ml",
+    isNew: true,
+    notes: {
+      top: ["Bergamota","Naranja","Especias suaves"],
+      heart: ["Coco cremoso","Ylang-ylang","Ambroxan","Mahonial"],
+      base: ["Sándalo","Benjuí","Almizcle","Vainilla"]
+    }
+  },
+  {
+    id: 324,
+    name: "Odyssey Mega",
+    brand: "Armaf",
+    price: 50000,
+    image: "/images/arabes/odyssey-mega-armaf-100ml-masculino.webp",
+    category: "hombre",
+    description: "Inspirado en Yves Saint Laurent Y Eau de Parfum. Una fragancia masculina amaderada-aromática, fresca, vibrante y muy versátil.",
+    size: "100ml",
+    isNew: true,
+    notes: {
+      top: ["Jengibre","Bergamota","Manzana verde","Menta"],
+      heart: ["Salvia","Bayas de enebro","Geranio"],
+      base: ["Amberwood","Haba tonka","Cedro","Vetiver"]
+    }
+  },
 ];
